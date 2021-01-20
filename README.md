@@ -1,30 +1,27 @@
-# Read Me Template!
-
-![alt](./images/readme.jpg)
+# London Refs Group - FIP 4
 
 ## Descrption
-* Give purpose and reason for why the project exists and give a nice description about the project.
+* Full design & web overhaul and advertising campaign for London Referee's Group... 
+* Details in progress... more to come soon
 
 ## Requirements
 * Use a modern browser such as Google Chrome.
-* Whatever other requirements someone's system may need to view this project
+* Requirements and optional dev dependencies can be found in the 'package.json' file
 
 ## Installation
-* `CD` to the location of your choice, then `git clone` the project and browse away!
-* Any thing else they need to do to install your proj?
+* `CD` to the location of your choice, then `git clone` the project and browse away! 
+* Make sure to `npm install` dependencies as listed in the 'package.json' file. 
 
 ## Built With
 * HTML
-* CSS
-* SASS
-* JavaScript
-* AJAX
+* CSS / SASS
+* JavaScript / Vue
 * PHP
-* Vue
-* etc...
+* Node 
 
 ## Authors
-* Tessa Benton-Cooper - Developer
+* Abdalrahman Abushammala - Project Manager
 * Jordan Andrigo - Designer
-
-
+* Tessa Benton-Cooper - Front-end Developer
+* Hien Nguyen - Back-end Developer
+* Spencer Mellor - Motion & 3D Designer
