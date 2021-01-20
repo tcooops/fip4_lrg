@@ -22,11 +22,6 @@
 ## Authors
 * Abdalrahman Abushammala - Project Manager
 * Jordan Andrigo - Designer
-<<<<<<< HEAD
 * Tessa Benton-Cooper - Front-end Developer
 * Hien Nguyen - Back-end Developer
 * Spencer Mellor - Motion & 3D Designer
-=======
-* Hien Nguyen - Developer
-
->>>>>>> 84f73d83daf05186a3d58282eaf99d847978bd75
