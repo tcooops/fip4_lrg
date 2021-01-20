@@ -26,5 +26,5 @@
 ## Authors
 * Tessa Benton-Cooper - Developer
 * Jordan Andrigo - Designer
-
+* Hien Nguyen - Developer
 
