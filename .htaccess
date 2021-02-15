@@ -1,0 +1,6 @@
+## Deny access
+<FilesMatch "\.?htaccess$>
+    deny from all
+</FilesMatch>
+
+

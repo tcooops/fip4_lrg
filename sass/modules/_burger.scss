@@ -7,6 +7,15 @@
 	margin: 0 auto;
 }
 
+.top-banner {
+	display: inline-flex;
+	flex-direction: row;
+	height: 80px;
+	max-width: 1920px;
+	background-color: $dark-grey;
+	
+}
+
 #main-nav { // mobile first burger menu!
 	display: flex;
 	flex-direction: column;
@@ -93,24 +102,13 @@
 
     #main-logo {
 		display: inline-block;
-		width: 200px;
-		height: 50px;
+		width: 382px;
+		height: 382px;
+		border-radius: 100%;
 		background-color: blue;
-    }
-}
-
-
-
-
-
-
-
-.section {
-	margin: 0 auto;
-	text-align: center;
-}
-
-footer {
-	text-align: center;
-	background-color: pink;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+	}
 }
