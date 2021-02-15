@@ -1,6 +1,6 @@
 # London Refs Group - FIP 4
 
-## Descrption
+## Description
 * Full design & web overhaul and advertising campaign for London Referee's Group... 
 * Details in progress... more to come soon
 
@@ -17,7 +17,7 @@
 * CSS / SASS
 * JavaScript / Vue
 * PHP
-* Node 
+* Node / NPM
 
 ## Authors
 * Abdalrahman Abushammala - Project Manager
