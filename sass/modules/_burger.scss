@@ -1,19 +1,14 @@
-.hidden {
-    display: none;
-}
-
-.main-container { /* main container */
-	max-width: 100vw; 
-	margin: 0 auto;
-}
-
-.top-banner {
-	display: inline-flex;
-	flex-direction: row;
-	height: 80px;
+#top-banner {
+	width: 100vw;
 	max-width: 1920px;
-	background-color: $dark-grey;
-	
+	height: 80px;
+	background-color: green;
+	#banner1 {
+		float: left;
+	}
+	#banner2 {
+		float: right;
+	}
 }
 
 #main-nav { // mobile first burger menu!
@@ -59,8 +54,25 @@
 	text-align: center;
 }
 
+.nav-item4 { // main logo
+	order: 1 !important;
+}
+
+#main-logo {
+	display: inline-block;
+	width: 382px;
+	height: 382px;
+	border-radius: 100%;
+	background-color: orange;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
 
 @media screen and (min-width: 64em) { /* 1024px */
+	
+
 
     #button {
     	display: none;
@@ -75,13 +87,9 @@
 		padding: 5px;
 	}
 	
-	#logo-con {
-		float: left;
-		width: 50%;
-	}
 
     #main-nav ul {
-		width: 50%;
+		width: 80%;
 		display: inline-flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -100,15 +108,5 @@
 		cursor: pointer;
     }
 
-    #main-logo {
-		display: inline-block;
-		width: 382px;
-		height: 382px;
-		border-radius: 100%;
-		background-color: blue;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		-ms-border-radius: 100%;
-		-o-border-radius: 100%;
-	}
+
 }
