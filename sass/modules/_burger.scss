@@ -1,19 +1,28 @@
-#top-banner {
+.top-banner {
+	display: block;
 	width: 100vw;
-	max-width: 1920px;
-	height: 80px;
-	background-color: green;
+	height: 50px;
+	background-color: $dark-grey!important;
+	color: $white;
+	margin: 0 auto;
 	#banner1 {
 		float: left;
 	}
 	#banner2 {
 		float: right;
 	}
+	p {
+		margin: 1em;
+	}
 }
 
 #main-nav { // mobile first burger menu!
+	width: 100vw;
+	height: 150px;
+	background-color: $black;
 	display: flex;
 	flex-direction: column;
+	color: $white;
 }
 
 #main-nav ul {
@@ -46,34 +55,29 @@
 
 #burger-con { // burger container
 	display: none; // hides the menu initially until clicked
-
 }
 
 #burger-con.slide-toggle { 
 	display: block; // this is what makes the menu appear upon click
 	text-align: center;
+	background-color: $dark-grey;
+	opacity: 98%;
+	z-index: 50;
 }
 
-.nav-item4 { // main logo
-	order: 1 !important;
+
+#nav-item4 {
+	order: 1;
 }
 
 #main-logo {
-	display: inline-block;
-	width: 382px;
-	height: 382px;
-	border-radius: 100%;
-	background-color: orange;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	-ms-border-radius: 100%;
-	-o-border-radius: 100%;
+	max-width: 382px;
+	width: 50%;
+	padding-top: 30px;
 }
 
 @media screen and (min-width: 64em) { /* 1024px */
 	
-
-
     #button {
     	display: none;
     }
@@ -86,27 +90,35 @@
 		margin: 0 auto;
 		padding: 5px;
 	}
-	
 
+	#burger-menu {
+		align-items: center;
+		height: 105px;
+		align-content: center;
+	}
+
+	#main-logo {
+		max-width: 382px;
+		width: 100%;
+	}
+	
     #main-nav ul {
-		width: 80%;
-		display: inline-flex;
+		width: 100%;
+		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		list-style-type: none;
     }
     
     #main-nav li a {
-		display: inline-block;
+		display: block;
     	text-decoration: none;
-		color: #333;
-		padding-left: 1em;
+		margin: 0 auto;
     }
 
     #main-nav a:hover {
-		font-style: italic;
+		font-style: oblique;
+		font-weight: bolder;
 		cursor: pointer;
     }
-
-
 }
