@@ -18,8 +18,8 @@
 
 #main-nav { // mobile first burger menu!
 	width: 100vw;
-	height: 150px;
 	background-color: $black;
+	height: 50px;
 	display: flex;
 	flex-direction: column;
 	color: $white;
@@ -32,6 +32,8 @@
 
 #main-nav li a { // this is where we style what's inside our mobile burger menu!
 	display: block;
+	margin: 0 auto;
+	text-align: center;
 } 
 
 #main-nav button { // styling the burger menu button
@@ -40,6 +42,7 @@
 	border: 0px;
 	width: 1.25em;
 	height: 1.25em;
+	padding-top: 4.5em;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-o-transition: all 400ms ease;
@@ -66,18 +69,29 @@
 }
 
 
-#nav-item4 {
-	order: 1;
+#main-logo { // hides main logo in burger menu, allows main logo to be in the center of nav on desktop
+	display: none;
 }
 
-#main-logo {
-	max-width: 382px;
-	width: 50%;
-	padding-top: 30px;
+#mobile-logo {
+	// displays mobile logo right now without having to be nested in nav and seen only in burger menu
+	display: block;
 }
 
 @media screen and (min-width: 64em) { /* 1024px */
 	
+	
+	#mobile-logo { // out with the mobile logo
+		display: none;
+	}
+
+	#main-logo {
+		display: inline-block; // in with the desktop logo
+		max-width: 382px;
+		width: 50%;
+		padding-top: 30px;
+	}
+
     #button {
     	display: none;
     }
@@ -100,6 +114,14 @@
 	#main-logo {
 		max-width: 382px;
 		width: 100%;
+	}
+	.nav-item4 {
+		display: inline;
+	}
+
+	#main-nav {
+		height: 150px;
+		background-color: $black;
 	}
 	
     #main-nav ul {
