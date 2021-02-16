@@ -1,4 +1,54 @@
 footer {
-	height: 500px;
+	height: 525px;
 	background-color: $dark-grey;
+}
+
+#footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-gap: 1em;
+	color: $white;
+	font-weight: bold;
+	align-content: center;
+	#footer-logo {
+		margin: 1em;
+	}	li {
+		padding: 0.5em;
+	}
+	ul {
+		list-style-type: none;
+	}
+	#footer-logo {
+		height: 25%;
+		padding-top: 50px;
+	}
+	#footer-nav, #footer-info, #copyright {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+@media screen and (min-width: 64em) { /* 1024px */
+
+	footer {
+		height: 325px;
+	}
+	#footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		color: $white;
+		font-weight: bold;
+		align-content: center;
+		a:hover {
+		font-style: italic;
+		}
+		li {
+			padding: 1em;
+		}
+		#footer-logo {
+			width: 25%;
+		}
+	}
 }
