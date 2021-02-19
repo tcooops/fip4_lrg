@@ -9,3 +9,9 @@ require_once ABSPATH.'/config/database.php';
 require_once ADMIN_SCRIPT_PATH.'/login.php';
 require_once ADMIN_SCRIPT_PATH.'/functions.php';
 require_once ADMIN_SCRIPT_PATH.'/user.php';
+
+//contact form
+require_once 'includes/PHPMailer/PHPMailer.php';
+require_once 'includes/PHPMailer/Exception.php';
+require_once 'includes/PHPMailer/SMTP.php';
+require_once 'includes/sendemail.php';

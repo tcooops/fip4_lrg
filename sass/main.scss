@@ -1,5 +1,9 @@
-@import "../sass/modules/_vars.scss";
-@import "../sass/modules/_header.scss";
-@import "../sass//modules/_burger.scss";
-@import "../sass/modules/_main.scss";
-@import "../sass//modules/_footer.scss";
+// sass --watch sass:../fip4_lrg/public/css --style compressed 
+
+@import "modules/_vars.scss";
+@import "modules/_header.scss";
+@import "modules/_burger.scss";
+@import "modules/_main.scss";
+@import "modules/_index.scss";
+@import "modules/_carousel.scss";
+@import "modules/_footer.scss";
