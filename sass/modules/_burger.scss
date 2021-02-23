@@ -27,8 +27,8 @@ z-index tracker:
 	font-size: 0.9em;
 	position: fixed;
 	margin-top: -1em;
-	margin-left: -0.5em;
-	margin-right: -2em!important;
+	margin-left: -0.8em;
+	padding-right: 1em!important;
 	#banner1 {
 		float: left;
 		padding-left: 0.5em;
@@ -55,6 +55,8 @@ z-index tracker:
 	z-index: 1;
 	position: fixed;
 	margin-top: 30px;
+	margin-left: -0.8em;
+	padding-right: 1em;
 }
 
 #main-nav ul {
