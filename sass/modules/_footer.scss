@@ -43,6 +43,11 @@ footer {
 		align-content: center;
 		a:hover {
 		font-style: italic;
+		transition: $smooth;
+		-webkit-transition: $smooth;
+		-moz-transition: $smooth;
+		-ms-transition: $smooth;
+		-o-transition: $smooth;
 		}
 		li {
 			padding: 1em;

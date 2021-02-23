@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Referees Group</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<main id="app">
+    <h1 class="hidden">London Referees Group</h1>
+    <div class="main-container">
+        <header class="main-header" id="mainHeader">
+            <div class="top-banner">
+                <p id="banner1">London Referees Group</p>
+                <p id="banner2">Proudly Canadian</p>
+            </div>
+            <nav id="main-nav">
+              <h2 class="hidden">Main Nav</h2>
+                <img src="images/logo.svg" alt="mobile logo" id="mobile-logo">
+                <button id="button"></button>
+                    <div id="burger-con">
+                        <ul id="burger-menu">
+                            <li class="nav-item1"><a href="/">HOME</a></li>
+                            <li class="nav-item2"><a href="/">THE REFEREE</a></li>
+                            <li class="nav-item3"><a href="/partners">PARTNERS</a></li>
+                            <li class="nav-item4">                    
+                                <a href="/"><img src="images/logo.svg" alt="logo" id="main-logo"></a>
+                            </li>
+                            <li class="nav-item5"><a href="/membership">MEMBERSHIP</a></li>
+                            <li class="nav-item6"><a href="/join">JOIN US</a></li>
+                            <li class="nav-item7"><a href="/contact">CONTACT</a></li>
+                        </ul>
+                        <div id="burger-legal">
+                            <p>Copyright © 2021</p>
+                            <p>London Referees Group</p>
+                            <p>Proudly Canadian</p>
+                        </div>
+                  </div>
+            </nav>
+        </header>
+        <section class="hero-con">
+            <h2 class="hidden">Main Carousel</h2>
+                <div id="contact-hero">
+
+                </div>
+        </section>
+        <section id="contact-main-con">
+            <h2 class="hidden">Contact Us</h2>
+            <div class="form-con">
+                <form action="" method="POST" id="contact-form" class="contact-form">
+                    <label for="fname">First name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="John Doe" class="input" required>
+                    <label for="lname">Last name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="John Doe" class="input" required>
+                    <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="123-456-7890" required>
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.ca" required>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" class="input" required>
+                        <option value="joining">Joining LRG</option>
+                        <option value="services">Using LRG services</option>
+                        <option value="mentorship">Junior Development Program</option>
+                        <option value="membership">Membership</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="How can we help?" required></textarea>
+                    <div class="contact-submit">
+                        <button class="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div id="contact-sidebar">
+                <img src="/images/placeholder.jpg" alt="">
+                <img src="/images/placeholder.jpg" alt="">
+                <img src="/images/placeholder.jpg" alt="">
+            </div>
+
+        </section>
+
+
+
+        <footer>
+            <h2 class="hidden">Footer</h2>
+            <div id="footer">
+                <img src="images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
+                <ul id="footer-nav">
+                    <li><a href="/">The Referee</a></li>
+                    <li><a href="/partners">Partners</a></li>
+                    <li><a href="/membership">Membership</a></li>
+                    <li><a href="/join">Join Us</a></li>        
+                </ul>
+                <ul id="footer-info">
+                    <li><a href="">Bylaws</a></li>
+                    <li><a href="">COVID-19</a></li>
+                    <li><a href="">Supervisors</a></li>
+                    <li><a href="">Report a Crime Offence</a></li>
+                    <li><a href="">Match Penalty Reports</a></li>
+                    <li><a href="">Brand Guidelines</a></li>
+                </ul>
+                <ul id="copyright">
+                    <li>Copyright © 2021</li>
+                    <li>London Referee Group</li>
+                    <li>Proudly Canadian</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</main>
+<script src="js/burger.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

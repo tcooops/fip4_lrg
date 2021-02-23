@@ -10,32 +10,32 @@
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
-        <header id="main-header">
+        <header class="main-header" id="mainHeader">
             <div class="top-banner">
                 <p id="banner1">London Referees Group</p>
                 <p id="banner2">Proudly Canadian</p>
             </div>
             <nav id="main-nav">
               <h2 class="hidden">Main Nav</h2>
-              <img src="images/logo.svg" alt="mobile logo" id="mobile-logo">
+                <img src="images/logo.svg" alt="mobile logo" id="mobile-logo">
                 <button id="button"></button>
-                  <div id="burger-con">
-                    <ul id="burger-menu">
-                        <li class="nav-item1"><a href="#">HOME</a></li>
-                        <li class="nav-item2"><a href="#">THE REFEREE</a></li>
-                        <li class="nav-item3"><a href="#">PARTNERS</a></li>
-                        <li class="nav-item4">                    
-                            <a href="/"><img src="images/logo.svg" alt="logo" id="main-logo"></a>
-                        </li>
-                        <li class="nav-item5"><a href="#">MEMBERSHIP</a></li>
-                        <li class="nav-item6"><a href="#">JOIN US</a></li>
-                        <li class="nav-item7"><a href="#">CONTACT</a></li>
-                    </ul>
-                    <div id="burger-legal">
-                        <p>Copyright © 2021</p>
-                        <p>London Referees Group</p>
-                        <p>Proudly Canadian</p>
-                    </div>
+                    <div id="burger-con">
+                        <ul id="burger-menu">
+                            <li class="nav-item1"><a href="/">HOME</a></li>
+                            <li class="nav-item2"><a href="/">THE REFEREE</a></li>
+                            <li class="nav-item3"><a href="/partners">PARTNERS</a></li>
+                            <li class="nav-item4">                    
+                                <a href="/"><img src="images/logo.svg" alt="logo" id="main-logo"></a>
+                            </li>
+                            <li class="nav-item5"><a href="/membership">MEMBERSHIP</a></li>
+                            <li class="nav-item6"><a href="/join">JOIN US</a></li>
+                            <li class="nav-item7"><a href="/contact">CONTACT</a></li>
+                        </ul>
+                        <div id="burger-legal">
+                            <p>Copyright © 2021</p>
+                            <p>London Referees Group</p>
+                            <p>Proudly Canadian</p>
+                        </div>
                   </div>
             </nav>
           </header>
@@ -45,20 +45,33 @@
                 <div id="index-carousel">
 
                 </div>
-          </section>
+            </section>
+<!-- floating login and social icons -->
+            <div class="floatingIcons">
+                <div class="floating-login">
+                    <a href="/">Sign in</a>
+                </div>
+                <ul class="floating-socials">
+                    <li><a href="www.facebook.com" target="new"><img src="/images/fb.svg" alt=""></a></li>
+                    <li><a href="www.instagram.com" target="new"><img src="images/insta.svg" alt=""></a></li>
+                    <li><a href="www.twitter.com" target="new"><img src="images/twitter.svg" alt=""></a></li>
+                </ul>
+            </div>
+<!-- end floating login and socials-->
+    <div class="scroll-snap-con"> <!-- start scroll snap -->
 
-          <section id="main-index">
+          <section id="main-index" class="scroll-snap">
               <h2>We are the London Referees Group</h2>
               <p>“Lorem ipsum blurb or phrase here Lorem ipsum blurb or phrase here Lorem ipsum blurb“</p>
           </section>
 
-          <section class="generic-section"> 
+          <section class="generic-section scroll-snap"> 
             <div class="covid-update">
                 <h2><span class="bold">COVID-19</span> <br>UPDATE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione officia sit quo commodi nisi quae vero eveniet veniam expedita maiores vitae molestias minima, labore obcaecati beatae quam culpa praesentium?</p>
             </div>
           </section>
-          <section class="generic-section">
+          <section class="generic-section scroll-snap">
             <div id="view-schedule">
                 <h2>View the schedule</h2>
                 <div class="generic-button">
@@ -66,7 +79,7 @@
                 </div>
             </div>
           </section>
-          <section id="what-we-do-section">
+          <section id="what-we-do-section scroll-snap">
             <h2 class="hidden">What we do</h2>
             <div id="what-we-do-con">
                 <div class="what-we-do">
@@ -89,7 +102,7 @@
                 </div>
             </div>
           </section>
-          <section id="the-referee-section"> 
+          <section id="the-referee-section" class="scroll-snap" name    ="theReferee"> 
             <h2>The Referee</h2>   
             <div class="inner-hero">
                 <img src="" alt="">
@@ -120,11 +133,8 @@
                     <div class="left-button">Read Me</div>
                 </div>
             </div>
-
-
-
-
           </section>
+    </div> <!-- end scroll snap-->
           <!-- 
             <div class="inner-hero">
             <img src="" alt="">
@@ -134,10 +144,11 @@
               <div id="footer">
                 <img src="images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
                 <ul id="footer-nav">
-                    <li><a href="">The Referee</a></li>
-                    <li><a href="">Partners</a></li>
-                    <li><a href="">Membership</a></li>
-                    <li><a href="">Join Us</a></li>        
+                    <li><a href="/">The Referee</a></li>
+                    <li><a href="/partners">Partners</a></li>
+                    <li><a href="/membership">Membership</a></li>
+                    <li><a href="/join">Join Us</a></li> 
+                    <li><a href="/contact">Contact Us</a></li>       
                 </ul>
                 <ul id="footer-info">
                     <li><a href="">Bylaws</a></li>
@@ -157,5 +168,6 @@
     </div>
 </main>
 <script src="js/burger.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

@@ -1,13 +1,41 @@
+
+/* 
+z-index tracker:
+	top banner: 2
+	sticky nav: 1
+	#burger-con.slide-toggle 50 (this needs to be on top of everything)
+	
+*/
+
+
+//set up for sticky nav bar / burger menu
+.sticky {
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
 .top-banner {
+	width: 100vw;
 	display: block;
 	height: 50px;
 	background-color: $dark-grey!important;
-	margin: -0.5em;
+	padding-top: 0.5em;
+	z-index: 2;
+	font-size: 0.9em;
+	position: fixed;
+	margin-top: -1em;
+	margin-left: -0.5em;
+	margin-right: -2em!important;
 	#banner1 {
 		float: left;
+		padding-left: 0.5em;
 	}
 	#banner2 {
 		float: right;
+		padding-right: 0.5em;
 	}
 	p {
 		margin: 1em;
@@ -17,10 +45,16 @@
 #main-nav { // mobile first burger menu!
 	width: 100vw;
 	background-color: $black;
-	height: 50px;
+	height: 75px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 	color: $white;
+	z-index: 1;
+	position: fixed;
+	margin-top: 30px;
 }
 
 #main-nav ul {
@@ -38,10 +72,9 @@
 	//stylingtheburgermenubuttonmargin: 0 auto;
 	background: url(../images/burger.svg) center no-repeat;
 	border: 0px;
-	width: 1.25em;
-	height: 1.25em;
-	margin: 0 auto;
-	padding-top: 4.5em;
+	width: 2em;
+	height: 2em;
+	margin-right: 2em;
 	transition: $smooth;
 	-webkit-transition: $smooth;
 	-moz-transition: $smooth;
@@ -49,11 +82,13 @@
 	-o-transition: $smooth;
 }
 
-#main-nav button.expanded { // fun burger menu animation/transition when pressed
-	margin-bottom: 1.25em;
+#main-nav button.expanded {
+	//funburgermenuanimation/transitionwhenpressed
 	transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
 
 #burger-con { // burger container
@@ -66,6 +101,8 @@
 	background-color: $dark-grey;
 	opacity: 98%;
 	z-index: 50;
+	width: 100vw;
+	margin-top: 5em;
 }
 
 #burger-menu {
@@ -89,19 +126,24 @@
 #mobile-logo {
 	// displays mobile logo right now without having to be nested in nav and seen only in burger menu
 	display: block;
+	margin-top: 2.3em;
+	padding-left: 1em;
+	height: 110px; 
 }
 
+
+
 @media screen and (min-width: 64em) { /* 1024px */
-	
-	
+
+	// logos 
+
 	#mobile-logo { // out with the mobile logo
 		display: none;
 	}
 
 	#main-logo {
 		display: inline-block; // in with the desktop logo
-		max-width: 382px;
-		width: 50%;
+		width:400px;
 		padding-top: 30px;
 	}
 
@@ -156,7 +198,12 @@
 		font-style: oblique;
 		font-weight: bolder;
 		cursor: pointer;
-    }
+		transition: $smooth;
+		-webkit-transition: $smooth;
+		-moz-transition: $smooth;
+		-ms-transition: $smooth;
+		-o-transition: $smooth;
+}
 
 	#burger-legal {
 		display: none;
