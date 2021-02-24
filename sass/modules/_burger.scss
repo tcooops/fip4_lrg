@@ -6,16 +6,12 @@ z-index tracker:
 	#burger-con.slide-toggle 50 (this needs to be on top of everything)
 	
 */
-
-
-//set up for sticky nav bar / burger menu
-.sticky {
-	width: 100%;
+.header {
+	width: 100vw;
+	height: 150px;
+	margin-top: 0;
 }
 
-.sticky + .content {
-	padding-top: 60px;
-}
 
 .top-banner {
 	width: 100vw;
