@@ -7,6 +7,7 @@
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
 
+
         if(!empty($username) && !empty($password)){
             //Log user in
             $message = login($username, $password, $ip);

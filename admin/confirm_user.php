@@ -8,14 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+    <title>User Confirmation</title>
 </head>
 <body>
-    <h2>Welcome <?php echo $_SESSION['user_name'];?> to the page!</h2>
-
-    <a href="admin_register.php">Create User</a><br>
-    <a href="admin_edituser.php">Edit User</a><br>
-    <a href="admin_logout.php">Sign Out</a><br>
-    <a href="../index.html">Home</a>
+    <h2>You have created an account successfully!</h2>
+    <h3>Thank you for signing up!</h3>
+    <p>Go back to </p><a href="index.php">Admin Dashboard</a>
+    <p>Go back to </p><a href="../index.html">Homepage</a>
 </body>
 </html>

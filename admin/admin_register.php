@@ -1,6 +1,6 @@
 <?php 
 require_once '../load.php';
-confirm_logged_in();
+//confirm_logged_in();
 
 if(isset($_POST['submit'])){
     $fname = trim($_POST['fname']);
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
 <body>
     <h2>Create User</h2>
     <?php echo !empty($message)? $message: ''; ?>
-    <form action="admin_createuser.php" method="post">
+    <form action="admin_register.php" method="post">
         <label>First Name</label>
         <input type="text" name="fname" value=""><br><br>
         <label>Username</label>
