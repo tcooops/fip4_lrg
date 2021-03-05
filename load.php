@@ -10,3 +10,8 @@ require_once ADMIN_SCRIPT_PATH.'/read.php';
 require_once ADMIN_SCRIPT_PATH.'/login.php';
 require_once ADMIN_SCRIPT_PATH.'/functions.php';
 require_once ADMIN_SCRIPT_PATH.'/user.php';
+
+//contact
+require_once 'PHPMailer/PHPMailer.php';
+require_once 'PHPMailer/Exception.php';
+require_once 'PHPMailer/SMTP.php';
