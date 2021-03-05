@@ -10,7 +10,7 @@ function createUser($fname, $username, $password, $email){
             ':fname'=>$fname,
             ':username'=>$username,
             ':password'=>$password,
-            ':email'=>$email
+            ':email'=>$email,
         )
     );
     if($create_user_result){
@@ -54,7 +54,7 @@ function editUser($user_data){
     );
 
     if($update_user_result){
-        redirect_to('index.php');
+        redirect_to('user_created.php');
     }else{
         return 'This is invalid';
     }

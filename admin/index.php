@@ -11,11 +11,11 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h2>Welcome <?php echo $_SESSION['user_name'];?> to the page!</h2>
+    <h2>Welcome Newcomer to London Referees Group!</h2>
 
     <a href="admin_register.php">Create User</a><br>
     <a href="admin_edituser.php">Edit User</a><br>
-    <a href="admin_logout.php">Sign Out</a><br>
-    <a href="../index.html">Home</a>
+    <a href="../index.html">Home</a><br>
+    <a href="admin_logout.php">Sign Out</a>
 </body>
 </html>

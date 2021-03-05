@@ -10,9 +10,8 @@
     <title>User Confirmation</title>
 </head>
 <body>
-    <h2>You have created an account successfully!</h2>
-    <h3>Thank you for signing up!</h3>
-    <p>Go back to </p><a href="index.php">Admin Dashboard</a>
-    <p>Go back to </p><a href="../index.html">Homepage</a>
+    <h2>You have changed your current account information!</h2>
+    <p>Go back to <a href="index.php">Admin Dashboard</a></p>
+    <p>Go back to <a href="../index.html">Homepage</a></p>
 </body>
 </html>

@@ -1,6 +1,8 @@
 <?php 
-require_once '../load.php';
-//confirm_logged_in();
+require_once '../config/database.php';
+require_once 'scripts/read.php';
+require_once 'scripts/functions.php';
+require_once 'scripts/user.php';
 
 if(isset($_POST['submit'])){
     $fname = trim($_POST['fname']);
@@ -14,8 +16,8 @@ if(isset($_POST['submit'])){
         $message = createUser($fname, $username, $password, $email);
     }
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
