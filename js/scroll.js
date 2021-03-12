@@ -1,4 +1,5 @@
-window.onscroll = function() {stickyNav()};
+window.onscroll = function() {stickyIcons()};
+//Hien: changed stickyNav to stickyIcons
 
 var icons = document.getElementByClass("floatingIcons");
 

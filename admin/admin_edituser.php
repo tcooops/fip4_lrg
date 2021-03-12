@@ -1,44 +1,50 @@
 <?php 
-    require_once '../load.php';
+require_once '../load.php';
+confirm_logged_in();
 
-    $ip = $_SERVER['REMOTE_ADDR'];
+$id = $_SESSION['user_id'];
+$current_user = getSingleUser($id);
 
-    if(isset($_POST['submit'])){
-        $username = trim($_POST['username']);
-        $password = trim($_POST['password']);
+if(empty($current_user)){
+    $message = 'Failed to get user info!';
+}
 
+if(isset($_POST['submit'])){
+    $data = array(
+        'fname'=>trim($_POST['fname']),
+        'username'=>trim($_POST['username']),
+        'password'=>trim($_POST['password']),
+        'email'=>trim($_POST['email']),
+        'id'=>$id
+    );
 
-        if(!empty($username) && !empty($password)){
-            //Log user in
-            $message = login($username, $password, $ip);
-        }else{
-            $message = 'Please fill out the required field';
-        }
-    }
+    $message = editUser($data);
+}
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LRG - Sign In</title>
+    <title>LRG - Edit User</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
-    <header class="main-header" id="mainHeader">
-        <div class="header">
-            <div class="top-banner">
-                <p id="banner1">London Referees Group</p>
-                <p id="banner2">Proudly Canadian</p>
-            </div>
-            <nav id="main-nav">
-                <h2 class="hidden">Main Nav</h2>
-                <img src="../images/logo.svg" alt="mobile logo" id="mobile-logo">
-                <button id="button"></button>
+        <header class="main-header" id="mainHeader">
+            <div class="header">
+                <div class="top-banner">
+                    <p id="banner1">London Referees Group</p>
+                    <p id="banner2">Proudly Canadian</p>
+                </div>
+                <nav id="main-nav">
+                    <h2 class="hidden">Main Nav</h2>
+                    <img src="../images/logo.svg" alt="mobile logo" id="mobile-logo">
+                    <button id="button"></button>
                     <div id="burger-con">
                         <ul id="burger-menu">
                             <li class="nav-item1"><a href="../index.php">HOME</a></li>
@@ -62,20 +68,30 @@
         </header> 
 
         <section class="admin">
-            <h2>Welcome Back!</h2>
-            <h3>Please enter your details!</h3>
-            <?php echo !empty($message)? $message: ''; ?>
-            <form action="admin_login.php" method="post" id="login-form">
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" value=""><br>
+            <h2>Edit User</h2>
+            <?php echo !empty($message)?$message:'';?>
+            <?php if(!empty($current_user)):?>
 
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" value=""><br>
+            <form action="admin_edituser.php" method="post">
+                <?php while($user_info = $current_user->fetch(PDO::FETCH_ASSOC)):?>
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" type="text" name="fname" value="<?php echo $user_info['user_fname'];?>"><br><br>
 
-                <button name="submit">Submit</button>
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username" value="<?php echo $user_info['user_name'];?>"><br><br>
+
+                    <label for="password">Password</label>
+                    <input id="password" type="text" name="password" value="<?php echo $user_info['user_pass'];?>"><br><br>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" value="<?php echo $user_info['user_email'];?>"><br><br>
+
+                    <button type="submit" name="submit">Update User</button>
+                <?php endwhile;?>
             </form>
+            <?php endif;?>
         </section>
-
+        
         <footer>
             <h2 class="hidden">Footer</h2>
             <div id="footer">
@@ -101,10 +117,9 @@
                 <li>Proudly Canadian</li>
             </ul>
             </div>
-        </footer>
-    </div><!--end main-container-->
+        </footer>    
+    </div>
 </main>
 <script src="../js/burger.js"></script>
-<script src="../js/scroll.js"></script>
 </body>
 </html>

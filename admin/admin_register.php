@@ -1,6 +1,21 @@
-<?php
-    require_once '../load.php';
-    confirm_logged_in();
+<?php 
+require_once '../config/database.php';
+require_once 'scripts/read.php';
+require_once 'scripts/functions.php';
+require_once 'scripts/user.php';
+
+if(isset($_POST['submit'])){
+    $fname = trim($_POST['fname']);
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+    $email = trim($_POST['email']);
+
+    if(empty($email) || empty($password) || empty($username) || empty($fname)){
+        $message = 'Please fill the required fields';
+    }else{
+        $message = createUser($fname, $username, $password, $email);
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -8,8 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+    <title>LRG - Create User</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -29,10 +43,10 @@
                         <div id="burger-con">
                             <ul id="burger-menu">
                                 <li class="nav-item1"><a href="../index.php">HOME</a></li>
-                                <li class="nav-item2"><a href="../#the-referee">THE REFEREE</a></li>
+                                <li class="nav-item2"><a href="../index.php#the-referee">THE REFEREE</a></li>
                                 <li class="nav-item3"><a href="../partners.php">PARTNERS</a></li>
                                 <li class="nav-item4">                    
-                                    <a href="index.php"><img src="../images/logo.svg" alt="logo" id="main-logo"></a>
+                                    <a href="../index.php"><img src="../images/logo.svg" alt="logo" id="main-logo"></a>
                                 </li>
                                 <li class="nav-item5"><a href="../membership.php">MEMBERSHIP</a></li>
                                 <li class="nav-item6"><a href="../join.php">JOIN US</a></li>
@@ -48,22 +62,28 @@
             </div>
         </header> 
 
-        <section class="dashboard">
-            <h2>Welcome Newcomer to London Referees Group!</h2>
-
-            <a href="admin_register.php">Create User</a><br>
-            <a href="admin_edituser.php">Edit User</a><br>
-            <a href="../index.php">Home</a><br>
-            <a href="admin_logout.php">Sign Out</a>
-            </div>
+        <section class="admin">
+            <h2>Create User</h2>
+            <?php echo !empty($message)? $message: ''; ?>
+            <form action="admin_register.php" method="post">
+                <label>First Name</label>
+                <input type="text" name="fname" value=""><br><br>
+                <label>Username</label>
+                <input type="text" name="username" value=""><br><br>
+                <label>Password</label>
+                <input type="text" name="password" value=""><br><br>
+                <label>Email</label>
+                <input type="email" name="email" value=""><br><br>
+                <button name="submit">Create User</button>
+            </form>
         </section>
-
+        
         <footer>
             <h2 class="hidden">Footer</h2>
             <div id="footer">
             <img src="../images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
             <ul id="footer-nav">
-                <li><a href="../#the-referee">The Referee</a></li>
+                <li><a href="../index.php#the-referee">The Referee</a></li>
                 <li><a href="../partners.php">Partners</a></li>
                 <li><a href="../membership.php">Membership</a></li>
                 <li><a href="../join.php">Join Us</a></li> 

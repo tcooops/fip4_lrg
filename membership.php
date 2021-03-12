@@ -14,7 +14,7 @@
         <section class="hero-con">
             <h2 class="hidden">Membership Hero</h2>
             <div id="membership-hero"></div>
-            <div class="sign-in"><a href="/">Sign in</a></div>
+            <div class="sign-in"><a href="admin.php">Sign in</a></div>
         </section>
         <section id="announcements">
             <h2>Announcements</h2>
@@ -38,11 +38,11 @@
                     <!-- Hien can grab this info via database & we can implement this to show details in a Lightbox. remove following, this is just here for visual interest -->
                     
                     <ul>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
+                        <li class="member"><img src="images/user.png" alt="user"></li>
+                        <li class="member"><img src="images/user.png" alt="user"></li>
+                        <li class="member"><img src="images/user.png" alt="user"></li>
+                        <li class="member"><img src="images/user.png" alt="user"></li>
+                        <li class="member"><img src="images/user.png" alt="user"></li>
                     </ul>
                     <div class="gallery-controls-member">
                         <div class="prev">

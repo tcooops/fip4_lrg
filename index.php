@@ -35,10 +35,10 @@
 <!-- floating login and social icons -->
             <div class="floatingIcons">
                 <div class="floating-login">
-                    <a href="/">Sign in</a>
+                    <a href="admin.php">Sign in</a>
                 </div>
                 <ul class="floating-socials">
-                    <li><a href="www.facebook.com" target="new"><img src="/images/fb.svg" alt=""></a></li>
+                    <li><a href="www.facebook.com" target="new"><img src="images/fb.svg" alt=""></a></li>
                     <li><a href="www.instagram.com" target="new"><img src="images/insta.svg" alt=""></a></li>
                     <li><a href="www.twitter.com" target="new"><img src="images/twitter.svg" alt=""></a></li>
                 </ul>
