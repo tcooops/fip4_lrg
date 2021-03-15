@@ -14,36 +14,9 @@
         <?php include 'templates/header.php'; ?>
 
         <section id="app">
-            <image-slider>
-                <p>
-                <a @click="prev">Previous</a> || <a @click="next">Next</a>
-                </p>
-                <transition-group name='fade' tag='div'>
-                <div
-                v-for="number in [currentNumber]"
-                :key='number'
-                >
-                <img
-                :src="currentImage"
-                v-on:mouseover="stopRotation"
-                v-on:mouseout="startRotation"
-                />
-                </div>
-                </transition-group>
-            </image-slider>
+            
+
         </section>
-<!-- floating login and social icons -->
-            <div class="floatingIcons">
-                <div class="floating-login">
-                    <a href="/">Sign in</a>
-                </div>
-                <ul class="floating-socials">
-                    <li><a href="www.facebook.com" target="new"><img src="/images/fb.svg" alt=""></a></li>
-                    <li><a href="www.instagram.com" target="new"><img src="images/insta.svg" alt=""></a></li>
-                    <li><a href="www.twitter.com" target="new"><img src="images/twitter.svg" alt=""></a></li>
-                </ul>
-            </div>
-<!-- end floating login and socials-->
             <section id="main-index">
                 <h2>We are the London Referees Group</h2>
                 <p>“Lorem ipsum blurb or phrase here Lorem ipsum blurb or phrase here Lorem ipsum blurb“</p>
