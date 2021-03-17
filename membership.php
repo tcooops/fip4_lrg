@@ -14,7 +14,7 @@
         <section class="hero-con">
             <h2 class="hidden">Membership Hero</h2>
             <div id="membership-hero"></div>
-            <div class="sign-in"><a href="/">Sign in</a></div>
+            <div class="sign-in"><a href="index.php">Sign in</a></div>
         </section>
         <section id="announcements">
             <h2>Announcements</h2>
@@ -66,17 +66,17 @@
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sunt, ut id sit aperiam cupiditate odio eveniet necessitatibus facere adipisci, porro saepe. Expedita numquam facilis blanditiis. Saepe, deleniti aut! Odio?</p>
-                        <button>Find out more</button>
+                        <div class="generic-button"><a href="">Find out more</a></div> 
                     </div>
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad vitae inventore sunt, tenetur voluptatibus dolores adipisci corporis numquam quae nam porro consectetur aliquid explicabo atque, aut illum. Esse, deleniti voluptatibus.</p>
-                        <button>Find out more</button>
+                        <div class="generic-button"><a href="">Find out more</a></div>
                     </div>
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum rem porro perferendis odit esse sit praesentium molestiae iusto, ex quae consequatur hic facere iste aspernatur nulla repudiandae repellendus vel!</p>
-                        <button>Find out more</button>
+                        <div class="generic-button"><a href="">Find out more</a></div>
                     </div>
                 </div>
         </section>
