@@ -97,7 +97,6 @@
         <?php include 'templates/footer.php'; ?>
   </div>
 </main>
-<script src="js/burger.js"></script>
-<script src="js/scroll.js"></script>
+<?php include 'templates/bottomLinks.php'; ?>
 </body>
 </html>
