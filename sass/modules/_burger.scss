@@ -26,7 +26,7 @@ z-index tracker:
 	padding-right: 1em!important;
 	#banner1 {
 		float: left;
-		padding-left: 0.5em;
+		padding-left: 1.5em;
 	}
 	#banner2 {
 		height: 50px;
@@ -39,25 +39,24 @@ z-index tracker:
 	}
 	.top-login {
 		width: 100px;
-		height: 30px;
+		height:25px;
 		background-color: $orange;
 		text-align: center;
-		align-items: center;
+		padding-top: 5px;
 	}
 	.top-socials {
 		margin-left: 2em;
-		width: 120px;
+		width:180px;
 		ul {
-			height: 50px;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around!important;
+			justify-content: space-between;
 			li {
+				padding: 10px;
 				list-style-type: none;
 				align-self: center;
 			}
 			img {
-				max-width: 40px;
 				width: 100%;
 			}
 		}
@@ -220,7 +219,22 @@ z-index tracker:
 
     #main-nav a:hover {
 		font-style: oblique;
-		font-weight: bolder;
+		//text-transform: lowercase;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+		-webkit-transition: 0.3s ease-in-out;
+		-moz-transition: 0.3s ease-in-out;
+		-ms-transition: 0.3s ease-in-out;
+		-o-transition: 0.3s ease-in-out;
+}
+
+	#burger-legal {
+		display: none;
+	}
+
+	.top-login:hover {
+		background-color: $white;
+		color: $orange;
 		cursor: pointer;
 		transition: $smooth;
 		-webkit-transition: $smooth;
@@ -228,9 +242,4 @@ z-index tracker:
 		-ms-transition: $smooth;
 		-o-transition: $smooth;
 }
-
-	#burger-legal {
-		display: none;
-	}
-
 }

@@ -22,9 +22,9 @@
             <div class="form-con">
                 <form action="" method="POST" id="contact-form" class="contact-form">
                     <label for="fname">First name</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="John Doe" class="input" required>
+                        <input type="text" id="firstname" name="firstname" placeholder="John" class="input" required>
                     <label for="lname">Last name</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="John Doe" class="input" required>
+                        <input type="text" id="firstname" name="firstname" placeholder="Doe" class="input" required>
                     <label for="phone">Phone</label>
                         <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
                     <label for="email">Email</label>

@@ -24,8 +24,8 @@
                             <li class="nav-item1"><a href="index.php">HOME</a></li>
                             <li class="nav-item2"><a href="#the-referee">THE REFEREE</a></li>
                             <li class="nav-item3"><a href="partners.php">PARTNERS</a></li>
-                            <li class="nav-item4">                    
-                                <a href="index.php"><img src="public/images/logo.svg" alt="logo" id="main-logo"></a>
+                            <li class="nav-item4">                     
+                                <a href="index.php"><img src="public/images/logo.svg" alt="logo" id="main-logo" class="topSlide"></a>
                             </li>
                             <li class="nav-item5"><a href="membership.php">MEMBERSHIP</a></li>
                             <li class="nav-item6"><a href="join.php">JOIN US</a></li>
