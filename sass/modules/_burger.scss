@@ -1,11 +1,17 @@
 
 /* 
 z-index tracker:
-	top banner: 2
+	top banner: 10
 	sticky nav: 1
 	#burger-con.slide-toggle 50 (this needs to be on top of everything)
 	
 */
+
+
+#main-logo {
+	display: none;
+}
+
 .header {
 	width: 100vw;
 	height: 150px;
@@ -18,41 +24,34 @@ z-index tracker:
 	height: 50px;
 	background-color: $dark-grey!important;
 	padding-top: 0.5em;
-	z-index: 2;
+	z-index: 10;
 	font-size: 0.9em;
 	position: fixed;
 	margin-top: -1em;
 	margin-left: -0.8em;
 	padding-right: 1em!important;
 	#banner1 {
-		float: left;
-		padding-left: 1.5em;
+		display: none;
 	}
 	#banner2 {
 		height: 50px;
 		float: right;
-		padding-right: 0.5em;
 		display: inline-flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
 	.top-login {
-		width: 100px;
-		height:25px;
-		background-color: $orange;
-		text-align: center;
-		padding-top: 5px;
+		display: none;
 	}
 	.top-socials {
-		margin-left: 2em;
-		width:180px;
+		width:140px;
 		ul {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			li {
-				padding: 10px;
+				padding: 5px;
 				list-style-type: none;
 				align-self: center;
 			}
@@ -63,102 +62,170 @@ z-index tracker:
 	}
 }
 
+#logo-con {
+	background-color: blue;
+	float: right !important;
+}
+
 #main-nav { // mobile first burger menu!
-	width: 100vw;
-	background-color: $black;
-	height: 100px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	color: $white;
-	z-index: 1;
-	position: fixed;
-	margin-top: 30px;
-	margin-left: -0.8em;
-	padding-right: 1em;
+	flex-direction: column;
 }
 
 #main-nav ul {
 	list-style-type: none;
-	text-align: center;
 }
 
 #main-nav li a { // this is where we style what's inside our mobile burger menu!
 	display: block;
-	margin: 0 auto;
-	text-align: center;
 } 
 
-#main-nav button {
-	//stylingtheburgermenubuttonmargin: 0 auto;
+.header-con {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+#main-nav button { // styling the burger menu button
+	z-index: 999; 
+	position: fixed;
+   // margin: 0 auto;
 	background: url(../images/burger.svg) center no-repeat;
 	border: 0px;
 	width: 2em;
 	height: 2em;
-	margin-right: 2em;
-	transition: $smooth;
-	-webkit-transition: $smooth;
-	-moz-transition: $smooth;
-	-ms-transition: $smooth;
-	-o-transition: $smooth;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
 }
 
-#main-nav button.expanded {
-	//funburgermenuanimation/transitionwhenpressed
+#main-nav button.expanded {  // fun burger menu animation/transition when pressed
+	margin-bottom: 1.25em;
 	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
 }
 
 #burger-con { // burger container
 	display: none; // hides the menu initially until clicked
 }
 
-#burger-con.slide-toggle { 
-	display: block; // this is what makes the menu appear upon click
-	text-align: center;
-	background-color: $dark-grey;
-	opacity: 98%;
-	z-index: 50;
+#burger-con.slide-toggle {
+	display: block;
+	//thisiswhatmakesthemenuappearuponclicktext-align: left;
+	z-index: 9; 
 	width: 100vw;
-	margin-top: 5em;
+	height: 100vh;
+	margin-left: -1em;
+	padding-right: 2em;
+	background-color:$dark-grey;
+	opacity: 96%;
+	color: $white;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	a {
+		color: $white;
+	}
 }
 
 #burger-menu {
-	padding: 0;
+	margin-top: 5em;
 	li {
-		padding: 1em;
+		padding-top: 0.7em;
+		font-size: 1.2em;
 	}
-	.nav-item4 {
-		display: none;
+	.nav-item5 {
+		padding-top: 0!important;
 	}
-	#burger-legal {
-		display: inline-block;
-		font-size: 0.7em;
-	} 
 }
 
-#main-logo { // hides main logo in burger menu, allows main logo to be in the center of nav on desktop
-	display: none;
+#burger-login {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	color: $white;
+	background-color: $orange;
+	text-align: center;
+	padding: 5px;
+	margin-left: 2.6em;
+	margin-top: 1em;
+}
+
+#burger-legal {
+	font-size: 0.6em;
+	line-height: 50%;
+	margin-left: 4.3em;
+	margin-top: 4em;
+	color: $orange;
 }
 
 #mobile-logo {
-	// displays mobile logo right now without having to be nested in nav and seen only in burger menu
-	display: block;
-	margin-top: 2.3em;
-	padding-left: 1em;
-	height: 110px; 
+	display: inline-block; // in with the desktop logo
+	width:80px;
+	padding-top: 30px;
+	position: fixed;
+	z-index: 11;
+	align-self: center;
+	margin-top: -2.3em;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 
-
 @media screen and (min-width: 64em) { /* 1024px */
+	header {
+		position: fixed;
+		margin-top: -1.5em;
+		margin-left: -1em;
+		margin-right: -1em;
+	}
 
-	// logos 
+	.top-banner {
+		z-index: 10;
+		#banner1 {
+			display: block;
+			float: left;
+			padding-left: 2.5em;
+		}
+		.top-login {
+			display: inline-block;
+			width: 75px;
+			height:20px;
+			background-color: $orange;
+			text-align: center;
+			padding: 2.5px;
+		}
+		.top-socials {
+			margin-left: 1em;
+			margin-right: 1em;
+			width: 180px;
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				li {
+					padding: 0.8em;
+					list-style-type: none;
+					align-self: center;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 
 	#mobile-logo { // out with the mobile logo
 		display: none;
@@ -166,8 +233,9 @@ z-index tracker:
 
 	#main-logo {
 		display: inline-block; // in with the desktop logo
-		width:400px;
-		padding-top: 30px;
+		z-index: 11!important;
+		max-width: 200px;
+		width: 100%;
 	}
 
     #button {
@@ -175,18 +243,24 @@ z-index tracker:
     }
 
     #burger-con {
+		height: 150px;
 		width: 90%;
 		display: inline-flex;
 		flex-direction: row;
 		justify-content: center;
 		margin: 0 auto;
 		padding: 5px;
+		margin: 0 auto;
 	}
 
 	#burger-menu {
 		align-items: center;
-		height: 105px;
 		align-content: center;
+	}
+
+
+	#burger-login {
+		display: none;
 	}
 
 	#main-logo {
@@ -209,6 +283,7 @@ z-index tracker:
 		flex-direction: row;
 		justify-content: space-between;
 		list-style-type: none;
+		font-size: 0.8em;
     }
     
     #main-nav li a {
@@ -218,7 +293,7 @@ z-index tracker:
     }
 
     #main-nav a:hover {
-		font-style: oblique;
+		font-style: italic;
 		//text-transform: lowercase;
 		cursor: pointer;
 		transition: 0.3s ease-in-out;

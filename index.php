@@ -111,8 +111,6 @@
           <?php include 'templates/footer.php'; ?>
     </div>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-<script src="js/burger.js"></script>
-<script src="js/main.js"></script>
+<?php include 'templates/bottomLinks.php'; ?>
 </body>
 </html>
