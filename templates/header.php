@@ -4,7 +4,7 @@
                 <p id="banner1">London Referees Group</p>
                 <div id="banner2">
                     <div class="top-login">
-                        <a href="login.php">Sign in</a>
+                        <a href="admin/admin_login.php">Sign in</a>
                     </div>
                     <div class="top-socials">
                         <ul>

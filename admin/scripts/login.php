@@ -7,7 +7,7 @@ function login($username, $password, $ip){
     $user_set = $pdo->prepare($check_exist_query);
     $user_set->execute(
         array(
-            ':username' => $username,
+            ':username' => $username
         )
     );
 
@@ -28,8 +28,8 @@ function login($username, $password, $ip){
             //Logged in!
             $message = 'You just logged in!';
             $_SESSION['user_id'] = $id;
-            $_SESSION['user_name'] = $found_user['user_fname'];
-
+            $_SESSION['user_name'] = $found_user['user_name'];
+           
             $update_query = 'UPDATE tbl_user SET user_ip = :ip WHERE user_id = :id';
             $update_set = $pdo->prepare($update_query);
             $update_set->execute(
@@ -44,22 +44,19 @@ function login($username, $password, $ip){
             redirect_to('index.php');
         }
     }else{
-        //User does not exist
-        $message = 'There is no such user. Have you created an account?';
+        $message = 'User does not exist';
     }
 
-
-
-    return $message;
+    $message = 'User does not exist';
 }
 
 function confirm_logged_in(){
     if(!isset($_SESSION['user_id'])){
-        redirect_to('admin_login.php');
+        redirect_to('confirm_user.php');
     }
 }
 
 function logout(){
     session_destroy();
-    redirect_to('admin_login.php');
+    redirect_to('../admin.php');
 }
