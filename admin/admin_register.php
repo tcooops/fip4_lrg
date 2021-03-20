@@ -1,20 +1,21 @@
 <?php 
-    require_once '../load.php';
+require_once '../config/database.php';
+require_once 'scripts/read.php';
+require_once 'scripts/functions.php';
+require_once 'scripts/user.php';
 
-    $ip = $_SERVER['REMOTE_ADDR'];
+if(isset($_POST['submit'])){
+    $fname = trim($_POST['fname']);
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+    $email = trim($_POST['email']);
 
-    if(isset($_POST['submit'])){
-        $username = trim($_POST['username']);
-        $password = trim($_POST['password']);
-
-
-        if(!empty($username) && !empty($password)){
-            //Log user in
-            $message = login($username, $password, $ip);
-        }else{
-            $message = 'Please fill out the required field';
-        }
+    if(empty($email) || empty($password) || empty($username) || empty($fname)){
+        $message = 'Please fill the required fields';
+    }else{
+        $message = createUser($fname, $username, $password, $email);
     }
+}
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LRG - Sign In</title>
+    <title>LRG - Create User</title>
     <link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
@@ -73,23 +74,53 @@
         </header> 
 
         <section class="admin">
-            <h2>Sign In</h2>
+            <h2>Create An Account</h2>
             <?php echo !empty($message)? $message: ''; ?>
-            <form action="admin_login.php" method="post" id="login-form">
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" value=""><br>
-
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" value=""><br>
-
-                <button id="admin_button" name="submit">Sign In</button>
-                <button id="admin_button"><a href="admin_register.php">Create Account</a></button>
+            <form action="admin_register.php" method="post">
+                <label>Name</label>
+                <input type="text" name="fname" value=""><br><br>
+                <label>Email</label>
+                <input type="email" name="email" value=""><br><br>
+                <label>Username</label>
+                <input type="text" name="username" value=""><br><br>
+                <label>Password</label>
+                <input type="text" name="password" value=""><br><br>
+                <label>Confirm Password</label>
+                <input type="text" name="password" value=""><br><br>
+                <button name="submit">Create Account</button>
             </form>
+            <p>Already have an account?</p>
+            <button id="admin_button"><a href="admin_login.php">Sign In</a></button>
         </section>
-
-    </div><!--end main-container-->
+        
+        <footer>
+            <h2 class="hidden">Footer</h2>
+            <div id="footer">
+            <img src="../images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
+            <ul id="footer-nav">
+                <li><a href="../index.php#the-referee">The Referee</a></li>
+                <li><a href="../partners.php">Partners</a></li>
+                <li><a href="../membership.php">Membership</a></li>
+                <li><a href="../join.php">Join Us</a></li> 
+                <li><a href="../contact.php">Contact Us</a></li>       
+            </ul>
+            <ul id="footer-info">
+                <li><a href="">Bylaws</a></li>
+                <li><a href="">COVID-19</a></li>
+                <li><a href="">Supervisors</a></li>
+                <li><a href="">Report a Crime Offence</a></li>
+                <li><a href="">Match Penalty Reports</a></li>
+                <li><a href="">Brand Guidelines</a></li>
+            </ul>
+            <ul id="copyright">
+                <li>Copyright © 2021</li>
+                <li>London Referee Group</li>
+                <li>Proudly Canadian</li>
+            </ul>
+            </div>
+        </footer>
+    </div>
 </main>
 <script src="../js/burger.js"></script>
-<script src="../js/scroll.js"></script>
 </body>
 </html>
