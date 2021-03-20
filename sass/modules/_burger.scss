@@ -185,9 +185,10 @@ z-index tracker:
 
 
 @media screen and (min-width: 64em) { /* 1024px */
+	
 	header {
 		position: fixed;
-		margin-top: -1.5em;
+		margin-top: -.5em;
 		margin-left: -1em;
 		margin-right: -1em;
 	}
@@ -258,6 +259,21 @@ z-index tracker:
 		align-content: center;
 	}
 
+	.nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, .nav-item6, .nav-item7 {
+		animation-name: fadeInLeft
+	}
+
+	@keyframes fadeInLeft {
+		from {
+			opacity: 0;
+			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
+			-moz-transform: translateX(-100%);
+			-ms-transform: translateX(-100%);
+			-o-transform: translateX(-100%);
+}
+		to { opacity: 1 }
+	}
 
 	#burger-login {
 		display: none;
