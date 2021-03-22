@@ -8,7 +8,42 @@
     margin: 0 auto;
     width: 70%;
     text-align: center;
-    height: 850px;
+    height: 350px;
+}
+
+#what-we-do-section {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 10em;
+}
+
+#what-we-do-con { // container
+    width: 100%;
+    margin: auto 0;
+	display: inline-grid;
+	grid-template-columns: repeat(1, 1fr); 
+	grid-gap: 1.5em; 
+}
+
+.what-we-do {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.index-icon {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    fill: white;
+    padding-bottom: 1.5em;
+    fill: white;
 }
 
 .covid-update {
@@ -28,7 +63,7 @@
 }
 
 .covid-section {
- display: hidden;
+    display: hidden;
 }
 
 #covid-update {
@@ -61,40 +96,6 @@
     margin: 0 auto;
     text-align: center;
     color: $orange !important;
-}
-
-#what-we-do-section {
-    margin: 0 auto;
-    width: 95%;
-    text-align: center;
-}
-
-#what-we-do-con { // container
-    width: 100%;
-    margin: auto 0;
-	display: inline-grid;
-	grid-template-columns: repeat(1, 1fr); 
-	grid-gap: 1.5em; 
-}
-
-.what-we-do {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding-top: 2em;
-}
-
-.index-icon {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
-    fill: white;
-    padding-bottom: 1.5em;
-    fill: white;
 }
 
 #the-referee-section {
@@ -137,6 +138,12 @@
   }
 
 @media screen and (min-width: 64em) { /* 1024px */
+    #main-index {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        height: 150px;
+    }
 
     .hero-video video{
         z-index: -50;
