@@ -1,6 +1,6 @@
 .hero-video video{
     z-index: -1;
-    margin-top: -6em;
+    margin-top: -5em;
     max-width: 100vw;
 }
 
@@ -122,8 +122,8 @@
 @media screen and (min-width: 64em) { /* 1024px */
 
     .hero-video video{
-
-        margin-top: 0em;
+        z-index: -50;
+        margin-top: 300px!important;
         max-width: 100vw;
     }
     
