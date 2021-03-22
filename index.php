@@ -84,6 +84,7 @@
                 <a href="#"><img src="public/images/index_mentorship.png" alt="" width="500"></a>
             </div>
         </section>
+        <hr>
         <section class="schedule-section">
             <div id="view-schedule">
                 <h2>View the schedule</h2>
@@ -92,6 +93,7 @@
                 </div>
             </div>
         </section>
+        <hr>
         <section id="the-referee-section" name="theReferee">   
             <div class="inner-hero">
                 <h2 id="the-referee">The Referee</h2> 
