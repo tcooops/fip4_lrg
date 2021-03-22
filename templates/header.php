@@ -23,7 +23,7 @@
                     <div id="burger-con">
                         <ul id="burger-menu">
                             <li class="nav-item1"><a href="index.php">HOME</a></li>
-                            <li class="nav-item2"><a href="index.php/#the-referee">THE REFEREE</a></li>
+                            <li class="nav-item2"><a href="referee.php">THE REFEREE</a></li>
                             <li class="nav-item3"><a href="partners.php">PARTNERS</a></li>
                             <li class="nav-item4">                     
                                 <a href="index.php"><img src="public/images/logo.svg" alt="logo" id="main-logo"></a>

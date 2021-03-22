@@ -74,14 +74,15 @@
                 </div>
             </div>
         </section>
+      <!--  <hr class="hr-covid"> -->
         <section class="covid-section"> 
             <div class="covid-update">
                 <h2><span class="bold">COVID-19</span> <br><span class="thin">UPDATE</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione officia sit quo commodi nisi quae vero eveniet veniam expedita maiores vitae molestias minima, labore obcaecati beatae quam culpa praesentium?</p>
             </div>
             <div id="covid-update">
-                <a href="#"><img src="public/images/index_covid.png" alt="" width="500" ></a>
-                <a href="#"><img src="public/images/index_mentorship.png" alt="" width="500"></a>
+                <a href="#"><img class="covid-img" src="public/images/index_covid.png" alt="" width="500" ></a>
+                <a href="#"><img class="covid-img" src="public/images/index_mentorship.png" alt="" width="500"></a>
             </div>
         </section>
 
@@ -98,38 +99,6 @@
         <hr class="hr-schedule">
         </section>
 
-        <section id="the-referee-section" name="theReferee">   
-            <div class="inner-hero">
-                <h2 id="the-referee">The Referee</h2> 
-                <img src="" alt="">
-            </div>
-            <div id="the-referee-con">
-                <div class="the-referee">
-                    <h3 class="skewRight">The Role of the Referee</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci quos, ut cupiditate alias culpa laudantium voluptas quisquam magnam doloribus possimus. Voluptates excepturi praesentium fugit! Pariatur dolorum dolores provident enim?</p>
-                    <div class="left-button"><a href="#">Read More</a></div>
-                </div>
-                <div class="the-referee">
-                    <h3>The Training</h3>
-                    <hr>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa autem voluptates voluptatibus architecto? Repellat est commodi reiciendis ea ipsum illo, cum perferendis tenetur ab consequuntur facilis autem nihil voluptate!</p>
-                    <div class="left-button"><a href="#">Read More</a></div>
-                </div>
-                <div class="the-referee">
-                    <h3>The Commitment</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias voluptates impedit aliquam, dolor, nihil sit deserunt laborum nulla reprehenderit quos, officia quo inventore. Repudiandae impedit sequi fugiat quidem odit.</p>
-                    <div class="left-button"><a href="#">Read More</a></div>
-                </div>
-                <div class="the-referee">
-                    <h3>Communication Skills</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at doloremque repellendus fuga tenetur, temporibus nemo provident architecto repudiandae eaque quae ipsa, earum nesciunt iure necessitatibus soluta ad maxime labore.</p>
-                    <div class="left-button"><a href="#">Read More</a></div>
-                </div>
-            </div>
-          </section>
     </div>
           <!-- 
             <div class="inner-hero">
