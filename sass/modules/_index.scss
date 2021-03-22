@@ -70,6 +70,13 @@ svg:hover {
 
 }
 
+.hr-covid {
+    border: 5px solid $orange;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 175px;
+}
+
 .covid-section {
     display: hidden;
 }
@@ -199,6 +206,14 @@ svg:hover {
         padding-top: 3em;
         margin: 0 auto;
         justify-content: space-between;
+        .covid-img:hover {
+            opacity: 60%;
+            transition: $smooth;
+            -webkit-transition: $smooth;
+            -moz-transition: $smooth;
+            -ms-transition: $smooth;
+            -o-transition: $smooth;
+}
     }
 
     #what-we-do-section {
