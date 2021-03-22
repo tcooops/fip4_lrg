@@ -24,27 +24,43 @@
         margin: 0 auto;
         text-align: center;
     }
+
+}
+
+.covid-section {
+ display: hidden;
 }
 
 #covid-update {
+    height: 800px;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-between;
+    padding-bottom: 6em;
     img {
         width: 300px;
         margin: 0 auto;
     }
 }
 
+.schedule-section {
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+}
+
 #view-schedule {
     width: 100%;
+    height: 300px;
+    background-color: $white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
     text-align: center;
+    color: $orange !important;
 }
 
 #what-we-do-section {
@@ -68,6 +84,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    padding-top: 2em;
 }
 
 .index-icon {
@@ -103,9 +120,9 @@
     }
 }
 
-.circle { animation: hu__hu__ infinite 2s ease-in-out }
-@keyframes hu__hu__ {
-    50% { transform: translateY(30px) }
+.circle { animation: bounce infinite 2s ease-in-out ; -webkit-animation: bounce infinite 2s ease-in-out ; }
+@keyframes bounce {
+    50% { transform: translateY(1em) ; -webkit-transform: translateY(1em) ; -moz-transform: translateY(1em) ; -ms-transform: translateY(1em) ; -o-transform: translateY(1em) ; }
 }
 
 @keyframes circle {
@@ -123,8 +140,15 @@
 
     .hero-video video{
         z-index: -50;
-        margin-top: 300px!important;
+        margin-top: 150px!important;
         max-width: 100vw;
+    }
+
+    .covid-section {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 850px;
     }
     
     .covid-update {
@@ -143,7 +167,7 @@
     #covid-update {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 50%;
         padding-top: 3em;
         margin: 0 auto;
         justify-content: space-between;
