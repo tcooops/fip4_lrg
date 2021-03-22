@@ -84,16 +84,20 @@
                 <a href="#"><img src="public/images/index_mentorship.png" alt="" width="500"></a>
             </div>
         </section>
-        <hr>
+
         <section class="schedule-section">
-            <div id="view-schedule">
-                <h2>View the schedule</h2>
-                <div class="generic-button">
-                    <a href="#">View full schedule</a>
+        <hr class="hr-schedule">
+            <div class="schedule-area">
+                <div id="view-schedule">
+                    <h2>View the schedule</h2>
+                    <div class="generic-button">
+                        <a href="#">View full schedule</a>
+                    </div>
                 </div>
             </div>
+        <hr class="hr-schedule">
         </section>
-        <hr>
+
         <section id="the-referee-section" name="theReferee">   
             <div class="inner-hero">
                 <h2 id="the-referee">The Referee</h2> 
