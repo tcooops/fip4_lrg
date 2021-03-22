@@ -82,20 +82,33 @@
 
 .schedule-section {
     margin: 0 auto;
+    width: 80%;
+    height: 600px;
+}
+
+.schedule-area {
+    padding-top: 50px;
+    margin: 0 auto;
     width: 100%;
-    height: 450px;
+    height: 350px;
+}
+
+.hr-schedule {
+    border: 5px solid $orange;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #view-schedule {
     width: 100%;
     height: 300px;
-    background-color: $white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
     text-align: center;
-    color: $orange !important;
+    color: $white !important;
 }
 
 #the-referee-section {
