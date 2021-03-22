@@ -41,9 +41,17 @@
     height: 100px;
     width: 100px;
     margin: 0 auto;
-    fill: white;
     padding-bottom: 1.5em;
-    fill: white;
+    z-index: -1;
+}
+
+svg:hover {
+    opacity: 70%;
+    transition: $smooth;
+    -webkit-transition: $smooth;
+    -moz-transition: $smooth;
+    -ms-transition: $smooth;
+    -o-transition: $smooth;
 }
 
 .covid-update {
@@ -232,3 +240,4 @@
     }
 
 }
+
