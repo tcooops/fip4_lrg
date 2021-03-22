@@ -3,7 +3,7 @@
               <div id="footer">
                 <img src="public/images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
                 <ul id="footer-nav">
-                    <li><a href="#the-referee">The Referee</a></li>
+                    <li><a href="referee.php">The Referee</a></li>
                     <li><a href="partners.php">Partners</a></li>
                     <li><a href="membership.php">Membership</a></li>
                     <li><a href="join.php">Join Us</a></li> 

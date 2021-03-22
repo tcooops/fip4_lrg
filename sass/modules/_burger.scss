@@ -63,13 +63,14 @@ z-index tracker:
 }
 
 #logo-con {
-	background-color: blue;
+	z-index: 10;
 	float: right !important;
 }
 
 #main-nav { // mobile first burger menu!
 	display: flex;
 	flex-direction: column;
+	z-index: 10;
 }
 
 #main-nav ul {
@@ -113,10 +114,11 @@ z-index tracker:
 }
 
 #burger-con.slide-toggle {
+	position: absolute;
 	display: block;
 	//thisiswhatmakesthemenuappearuponclicktext-align: left;
 	z-index: 9; 
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	margin-left: -1em;
 	padding-right: 2em;
@@ -316,20 +318,22 @@ z-index tracker:
 		-moz-transition: 0.3s ease-in-out;
 		-ms-transition: 0.3s ease-in-out;
 		-o-transition: 0.3s ease-in-out;
-}
+	}
 
 	#burger-legal {
 		display: none;
 	}
 
 	.top-login:hover {
-		background-color: $white;
-		color: $orange;
-		cursor: pointer;
-		transition: $smooth;
-		-webkit-transition: $smooth;
-		-moz-transition: $smooth;
-		-ms-transition: $smooth;
-		-o-transition: $smooth;
+		height: 18px;
+        width: 73px;
+        background-color: transparent;
+        color: $white;
+        border: 2px solid $orange;
+        transition: 0.2s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -ms-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
 }
 }
