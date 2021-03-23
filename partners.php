@@ -10,9 +10,9 @@
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
- <!-- /*  <?php include 'templates/header.php'; ?> */-->
+    <?php include 'templates/header.php'; ?>
         <section class="top-hero">
-            <div class="">
+            <div id="hero-img-partners">
                 <div class="">
 
                 </div>
