@@ -21,7 +21,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LRG</title>
+    <title>LRG ~ LogIn</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,14 +33,12 @@
 </head>
 <body>
 <main>
-    <header class="main-header" id="mainHeader">
+<h1 class="hidden">Admin LogIn</h1>
+    <header class="main-header admin-header" id="mainHeader">
         <div class="header">
             <div class="top-banner">
                 <p id="banner1">London Referees Group</p>
                 <div id="banner2">
-                    <div class="top-login">
-                        <a href="admin/admin_login.php">Sign in</a>
-                    </div>
                     <div class="top-socials">
                         <ul>
                             <li><a href="www.facebook.com" target="new"><img src="../public/images/fb.svg" alt="Facebook"></a></li>
@@ -52,7 +50,6 @@
             </div>
             <nav id="main-nav">
                 <h2 class="hidden">Main Nav</h2>
-                
                 <button id="button"></button>
                 <img src="../public/images/logo.svg" alt="mobile logo" id="mobile-logo">
                     <div id="burger-con">
@@ -67,11 +64,6 @@
                             <li class="nav-item6"><a href="join.php">JOIN US</a></li>
                             <li class="nav-item7"><a href="contact.php">CONTACT</a></li>
                         </ul>
-                        <div id="burger-login">
-                            <div class="top-login">
-                                <a href="login.php">Sign in</a>
-                            </div>
-                        </div>
                         <div id="burger-legal">
                             <p>Copyright © 2021</p>
                             <p>London Referees Group</p>
@@ -82,18 +74,22 @@
         </div>
     </header> 
         <section class="admin">
-            <h2>Sign In</h2>
-            <?php echo !empty($message)? $message: ''; ?>
-            <form action="admin_login.php" method="post" id="login-form">
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" value=""><br>
+            <div id="login-con">
+                <h2>Log In</h2>
+                <?php echo !empty($message)? $message: ''; ?>
+                <form action="admin_login.php" method="post" id="login-form">
+                    <label for="username">Username:</label><br>
+                    <input type="text" name="username" id="username" value=""><br>
 
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" value=""><br>
-
-                <button id="admin_button" name="submit">Sign In</button>
-                <button id="admin_button"><a href="admin_register.php">Create Account</a></button>
-            </form>
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" value=""><br>
+                    
+                    <div id="login-submit">
+                        <button class="admin_button" id="admin_button" name="submit">Sign In</button>
+                        <a id="admin_button"  href="admin_register.php">Create Account</a>
+                    </div>
+                </form>
+            </div>
         </section>
         <footer>
               <h2 class="hidden">Footer</h2>
