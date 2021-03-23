@@ -14,8 +14,9 @@
         }else{
             $message = 'Please fill out the required field';
         }
-    }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,15 +55,15 @@
                 <img src="../public/images/logo.svg" alt="mobile logo" id="mobile-logo">
                     <div id="burger-con">
                         <ul id="burger-menu">
-                            <li class="nav-item1"><a href="index.php">HOME</a></li>
-                            <li class="nav-item2"><a href="referee.php">THE REFEREE</a></li>
-                            <li class="nav-item3"><a href="partners.php">PARTNERS</a></li>
+                            <li class="nav-item1"><a href="../index.php">HOME</a></li>
+                            <li class="nav-item2"><a href="../referee.php">THE REFEREE</a></li>
+                            <li class="nav-item3"><a href="../partners.php">PARTNERS</a></li>
                             <li class="nav-item4">                     
                                 <a href="index.php"><img src="../public/images/logo.svg" alt="logo" id="main-logo"></a>
                             </li>
-                            <li class="nav-item5"><a href="membership.php">MEMBERSHIP</a></li>
-                            <li class="nav-item6"><a href="join.php">JOIN US</a></li>
-                            <li class="nav-item7"><a href="contact.php">CONTACT</a></li>
+                            <li class="nav-item5"><a href="../membership.php">MEMBERSHIP</a></li>
+                            <li class="nav-item6"><a href="../join.php">JOIN US</a></li>
+                            <li class="nav-item7"><a href="../contact.php">CONTACT</a></li>
                         </ul>
                         <div id="burger-legal">
                             <p>Copyright © 2021</p>
@@ -77,7 +78,7 @@
             <div id="login-con">
                 <h2>Log In</h2>
                 <?php echo !empty($message)? $message: ''; ?>
-                <form action="admin_login.php" method="post" id="login-form">
+                <form action="admin_login.php" method="post" id="login-form" class="admin-form">
                     <label for="username">Username:</label><br>
                     <input type="text" name="username" id="username" value=""><br>
 
@@ -96,15 +97,15 @@
               <div id="footer">
                 <img src="../public/images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
                 <ul id="footer-nav">
-                    <li><a href="#the-referee">The Referee</a></li>
-                    <li><a href="partners.php">Partners</a></li>
-                    <li><a href="membership.php">Membership</a></li>
-                    <li><a href="join.php">Join Us</a></li> 
-                    <li><a href="contact.php">Contact Us</a></li>       
+                    <li><a href="../referee.php">The Referee</a></li>
+                    <li><a href="../partners.php">Partners</a></li>
+                    <li><a href="../membership.php">Membership</a></li>
+                    <li><a href="../join.php">Join Us</a></li> 
+                    <li><a href="../contact.php">Contact Us</a></li>       
                 </ul>
                 <ul id="footer-info">
                     <li><a href="">Bylaws</a></li>
-                    <li><a href="">COVID-19</a></li>
+                    <li><a href="">COVID-19</a></li ff>
                     <li><a href="">Supervisors</a></li>
                     <li><a href="">Report a Crime Offence</a></li>
                     <li><a href="">Match Penalty Reports</a></li>
