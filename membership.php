@@ -38,11 +38,12 @@
                     <!-- Hien can grab this info via database & we can implement this to show details in a Lightbox. remove following, this is just here for visual interest -->
                     
                     <ul>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
-                        <li class="member"><img src="/images/user.png" alt="user"></li>
+                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
                     </ul>
                     <div class="gallery-controls-member">
                         <div class="prev">
@@ -58,27 +59,38 @@
                 </p>
              </div>
         </section>
-        <section> <!-- skill building section-->
+        <section id="the-referee-section">   
             <div class="inner-hero">
-                <h2>Skill Building</h2>
+                <h2 id="the-referee">Skill Building with LRG</h2> 
                 <img src="" alt="">
-                </div id="skill-building-con">
-                    <div class="skill-building">
-                        <h3>Skill Building</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sunt, ut id sit aperiam cupiditate odio eveniet necessitatibus facere adipisci, porro saepe. Expedita numquam facilis blanditiis. Saepe, deleniti aut! Odio?</p>
-                        <div class="generic-button"><a href="">Find out more</a></div> 
+            </div>
+                <div id="the-referee-con">
+                    <div class="the-referee">
+                        <h3 class="skewRight">Skill Building</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci quos, ut cupiditate alias culpa laudantium voluptas quisquam magnam doloribus possimus. Voluptates excepturi praesentium fugit! Pariatur dolorum dolores provident enim?</p>
+                        <div class="left-button"><a href="#">Read More</a></div>
                     </div>
-                    <div class="skill-building">
+                    <div class="the-referee">
                         <h3>Skill Building</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad vitae inventore sunt, tenetur voluptatibus dolores adipisci corporis numquam quae nam porro consectetur aliquid explicabo atque, aut illum. Esse, deleniti voluptatibus.</p>
-                        <div class="generic-button"><a href="">Find out more</a></div>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa autem voluptates voluptatibus architecto? Repellat est commodi reiciendis ea ipsum illo, cum perferendis tenetur ab consequuntur facilis autem nihil voluptate!</p>
+                        <div class="left-button"><a href="#">Read More</a></div>
                     </div>
-                    <div class="skill-building">
+                    <div class="the-referee">
                         <h3>Skill Building</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum rem porro perferendis odit esse sit praesentium molestiae iusto, ex quae consequatur hic facere iste aspernatur nulla repudiandae repellendus vel!</p>
-                        <div class="generic-button"><a href="">Find out more</a></div>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias voluptates impedit aliquam, dolor, nihil sit deserunt laborum nulla reprehenderit quos, officia quo inventore. Repudiandae impedit sequi fugiat quidem odit.</p>
+                        <div class="left-button"><a href="#">Read More</a></div>
+                    </div>
+                    <div class="the-referee">
+                        <h3>Skill Building</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at doloremque repellendus fuga tenetur, temporibus nemo provident architecto repudiandae eaque quae ipsa, earum nesciunt iure necessitatibus soluta ad maxime labore.</p>
+                        <div class="left-button"><a href="#">Read More</a></div>
                     </div>
                 </div>
+          </section>
         </section>
         <section> <!-- gallery -->
             <!-- Hien can grab this stuff from the database-->
