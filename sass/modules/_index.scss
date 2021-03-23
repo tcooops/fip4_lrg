@@ -149,21 +149,7 @@ svg:hover {
     }
 }
 
-.circle { animation: bounce infinite 2s ease-in-out ; -webkit-animation: bounce infinite 2s ease-in-out ; }
-@keyframes bounce {
-    50% { transform: translateY(1em) ; -webkit-transform: translateY(1em) ; -moz-transform: translateY(1em) ; -ms-transform: translateY(1em) ; -o-transform: translateY(1em) ; }
-}
 
-@keyframes circle {
-    from {
-      -webkit-clip-path: circle(0%);
-      clip-path: circle(0%);
-    }
-    to {
-      -webkit-clip-path: circle(100px);
-      clip-path: circle(100px);
-    }
-  }
 
 @media screen and (min-width: 64em) { /* 1024px */
     #main-index {

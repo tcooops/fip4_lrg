@@ -92,9 +92,9 @@
                 </form>
             </div>
             <div id="contact-sidebar">
-                <img src="public/images/icon_call.svg" alt="phone">
-                <img src="public/images/icon_email.svg" alt="email">
-                <img src="public/images/icon_mail.svg" alt="mail">
+                <img class="pulse" src="public/images/icon_call.svg" alt="phone">
+                <img class="pulse" src="public/images/icon_email.svg" alt="email">
+                <img class="pulse" src="public/images/icon_mail.svg" alt="mail">
             </div>
 
         </section>
