@@ -85,14 +85,34 @@
                 <a href="#"><img class="covid-img" src="public/images/index_mentorship.png" alt="" width="500"></a>
             </div>
         </section>
-
+        <section id="certification">
+            <div class="inner-hero">
+                <img src="" alt="">
+            </div>
+            <div id="certification-con">
+                <h2>Our Certifications</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi! <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.
+                </p>
+                <div id="contacts">
+                    <h2 >Contacts</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi!
+                        <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? 
+                        <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.</p>
+                </div>
+            </div>
+        </section>
         <section class="schedule-section">
         <hr class="hr-schedule">
             <div class="schedule-area">
                 <div id="view-schedule">
                     <h2>View the schedule</h2>
                     <div class="generic-button">
-                        <a href="#">View full schedule</a>
+                        <a href="membership.php">View full schedule</a>
                     </div>
                 </div>
             </div>

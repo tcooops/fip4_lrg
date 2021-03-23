@@ -12,9 +12,9 @@
     <div class="main-container">
     <?php include 'templates/header.php'; ?>
         <section class="hero-con">
-            <h2 class="hidden">Membership Hero</h2>
+            <h2 class="hidden">Membership</h2>
             <div id="membership-hero"></div>
-            <div class="sign-in"><a href="index.php">Sign in</a></div>
+            <div class="sign-in"><a href="login.php">Sign in</a></div>
         </section>
         <section id="announcements">
             <h2>Announcements</h2>
@@ -34,9 +34,7 @@
                 <img src="" alt="">
             </div>
             <div id="committee-con">
-                <div id="committee">
-                    <!-- Hien can grab this info via database & we can implement this to show details in a Lightbox. remove following, this is just here for visual interest -->
-                    
+                <div id="committee">                    
                     <ul>
                        <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
                        <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>

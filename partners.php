@@ -10,11 +10,11 @@
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
-    <?php include 'templates/header.php'; ?>
-        <section class="hero-con">
-            <div id="partners-hero" class="hero-frost-con">
-                <div class="hero-frost">
-                    <h2>LRG Partners</h2>
+ <!-- /*  <?php include 'templates/header.php'; ?> */-->
+        <section class="top-hero">
+            <div class="">
+                <div class="">
+
                 </div>
             </div>
         </section>
@@ -75,25 +75,7 @@
                 </ul>
             </div>
         </section>
-        <section id="certification">
-            <div class="inner-hero">
-                <img src="" alt="">
-            </div>
-            <h2>Our Certifications</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi! <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.
-            </p>
-            <div id="contacts">
-                <h2 >Contacts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi!
-                    <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? 
-                    <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.</p>
-            </div>
-        </section>
+
         <?php include 'templates/footer.php'; ?>
   </div>
 </main>

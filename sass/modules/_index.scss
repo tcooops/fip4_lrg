@@ -85,13 +85,33 @@ svg:hover {
     height: 800px;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%; // should fix the centering of the split photos on mobile?
     margin: 0 auto;
     justify-content: space-between;
     padding-bottom: 6em;
     img {
         width: 300px;
         margin: 0 auto;
+    }
+}
+
+#certification {
+    width: 100vw;
+    padding-bottom: 5em;
+    h2{
+        text-align: center;
+        font-size: 2.5em
+    }
+    p {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #certification-con {
+        margin: 0 auto;
+    }
+    #contacts {
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
 }
 
@@ -240,5 +260,14 @@ svg:hover {
         justify-content: space-between;
     }
 
+    #certification {
+        margin: 0 auto;
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.3em;
+        }
+    }
 }
 
