@@ -79,15 +79,15 @@
                 <h2>Log In</h2>
                 <?php echo !empty($message)? $message: ''; ?>
                 <form action="admin_login.php" method="post" id="login-form" class="admin-form">
-                    <label for="username">Username:</label><br>
-                    <input type="text" name="username" id="username" value=""><br>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="">
 
-                    <label for="password">Password:</label><br>
-                    <input type="password" name="password" id="password" value=""><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="">
                     
                     <div id="login-submit">
                         <button class="admin_button" id="admin_button" name="submit">Sign In</button>
-                        <a id="admin_button"  href="admin_register.php">Create Account</a>
+                        <a class="link" id="admin_button"  href="admin_register.php">Create Account</a>
                     </div>
                 </form>
             </div>

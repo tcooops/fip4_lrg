@@ -102,7 +102,7 @@ if(isset($_POST['submit'])){
                     <input id="email" type="email" name="email" value="<?php echo $user_info['user_email'];?>"><br><br>
 
                     <button class="admin_button" type="submit" name="submit">Update User</button>
-                    <p>Back to <a class="link" href="../index.php">dashboard</a></p>
+                    <p>Back to <a class="link" href="index.php">dashboard</a></p>
                 <?php endwhile;?>
             </form>
             <?php endif;?>
