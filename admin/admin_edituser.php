@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LRG ~ User Dashboard</title>
+    <title>LRG ~ Edit User</title>
     <link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
@@ -58,7 +58,6 @@ if(isset($_POST['submit'])){
                 <img src="../public/images/logo.svg" alt="mobile logo" id="mobile-logo">
                     <div id="burger-con">
                         <ul id="burger-menu">
-                            <li class="nav-item1"><a href="index.php">USER DASHBOARD</a></li>
                             <li class="nav-item1"><a href="../index.php">LRG HOME</a></li>
                             <li class="nav-item2"><a href="../referee.php">THE REFEREE</a></li>
                             <li class="nav-item3"><a href="../partners.php">PARTNERS</a></li>

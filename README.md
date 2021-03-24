@@ -17,11 +17,10 @@
 * CSS / SASS
 * JavaScript / Vue
 * PHP
-* Node / NPM
 
 ## Authors
 * Abdalrahman Abushammala - Project Manager
 * Jordan Andrigo - Designer
 * Tessa Benton-Cooper - Front-end Developer
 * Hien Nguyen - Back-end Developer
-* Spencer Mellor - Motion & 3D Designer
+* Spencer Mellor - Video & Motion Designer
