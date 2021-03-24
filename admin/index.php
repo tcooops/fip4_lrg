@@ -38,7 +38,8 @@
                 <img src="../public/images/logo.svg" alt="mobile logo" id="mobile-logo">
                     <div id="burger-con">
                         <ul id="burger-menu">
-                            <li class="nav-item1"><a href="../index.php">HOME</a></li>
+                            <li class="nav-item1"><a href="index.php">USER DASHBOARD</a></li>
+                            <li class="nav-item1"><a href="../index.php">LRG HOME</a></li>
                             <li class="nav-item2"><a href="../referee.php">THE REFEREE</a></li>
                             <li class="nav-item3"><a href="../partners.php">PARTNERS</a></li>
                             <li class="nav-item4">                     
@@ -48,7 +49,11 @@
                             <li class="nav-item6"><a href="../join.php">JOIN US</a></li>
                             <li class="nav-item7"><a href="../contact.php">CONTACT</a></li>
                         </ul>
-                        
+                        <div id="burger-login">
+                            <div class="top-login">
+                                <a href="admin_logout.php">Log Out</a>
+                            </div>
+                        </div>
                         <div id="burger-legal">
                             <p>Copyright © 2021</p>
                             <p>London Referees Group</p>
@@ -57,7 +62,7 @@
                   </div>
             </nav>
         </div>
-        </header>  
+        </header>
 
         <section class="dashboard-con">
                 <h2>Welcome, <?php echo $_SESSION['user_name'];?>!</h2>
