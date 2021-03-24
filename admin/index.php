@@ -60,13 +60,14 @@
         </header>  
 
         <section class="dashboard">
-            <h2>Welcome Newcomer to London Referees Group!</h2>
+            <h2>London Referees Group</h2>
+            <h3>Welcome, <?php echo $_SESSION['user_name'];?>!</h3>
 
-            <a href="admin_register.php">Create User</a><br>
-            <a href="admin_edituser.php">Edit User</a><br>
+            <a href="admin_edituser.php">Edit profile</a><br>
+            <a href="../membership.php">See schedule</a><br>
             <a href="../index.php">Home</a><br>
-            <a href="admin_logout.php">Sign Out</a>
-            </div>
+            <a href="admin_logout.php">Log out</a>
+            
         </section>
 
         <footer>
