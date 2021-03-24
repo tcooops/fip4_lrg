@@ -59,15 +59,27 @@
         </div>
         </header>  
 
-        <section class="dashboard">
-            <h2>London Referees Group</h2>
-            <h3>Welcome, <?php echo $_SESSION['user_name'];?>!</h3>
-
-            <a href="admin_edituser.php">Edit profile</a><br>
-            <a href="../membership.php">See schedule</a><br>
-            <a href="../index.php">Home</a><br>
-            <a href="admin_logout.php">Log out</a>
-            
+        <section class="dashboard-con">
+                <h2>Welcome, <?php echo $_SESSION['user_name'];?>!</h2>
+                <h3>User Dashboard</h3>
+            <div class="dashboard">
+                <div class="icon-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                    <a class="link" href="admin_edituser.php">Edit profile</a>
+                </div>
+                <div class="icon-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>
+                    <a class="link" href="../membership.php">See schedule</a>
+                </div>
+                <div class="icon-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    <a class="link" href="../index.php">Home</a>
+                </div>
+                <div class="icon-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/></svg>
+                    <a class="link" href="admin_logout.php">Log out</a>
+                </div>                
+            </div>
         </section>
 
         <footer>

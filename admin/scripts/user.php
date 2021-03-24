@@ -57,9 +57,10 @@ function editUser($user_data){
     );
 
     if($update_user_result){
-        redirect_to('user_edited.php');
+        header( "refresh:5;url=../admin/index.php" );
+        return 'Your profile has been updated. You will be redirected in 5 seconds';
     }else{
-        return 'This is invalid';
+        return 'Profile was not updated.';
     }
 }
 
