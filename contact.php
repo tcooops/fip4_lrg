@@ -59,7 +59,7 @@
     <div class="main-container">
         <?php include 'templates/header.php'; ?>
         <section id="contact-main-con">
-            <h2 class="hidden">Contact Us</h2>
+        <h2 class="hidden">Get in touch with LRG</h2>
             <div class="form-con">
                 <form action="" method="post" id="contact-form" class="contact-form">
                     <label for="fname">First name</label>
@@ -79,7 +79,7 @@
                         <option name="option" value="other">Other</option>
                     </select>
                     <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="How can we help?" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="How can we help?" required></textarea>
                     <div class="contact-submit">
                         <button class="submit">Submit</button>
                     </div>

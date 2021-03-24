@@ -53,7 +53,6 @@ if(isset($_POST['submit'])){
                 <img src="../public/images/logo.svg" alt="mobile logo" id="mobile-logo">
                     <div id="burger-con">
                         <ul id="burger-menu">
-                            <li class="nav-item1"><a href="index.php">USER DASHBOARD</a></li>
                             <li class="nav-item1"><a href="../index.php">LRG HOME</a></li>
                             <li class="nav-item2"><a href="../referee.php">THE REFEREE</a></li>
                             <li class="nav-item3"><a href="../partners.php">PARTNERS</a></li>
