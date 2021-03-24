@@ -25,9 +25,6 @@
           <img id="join-ad" src="" alt="ad">
     </section>
     <section class="certification">
-      <div class="inner-hero">
-        <img src="" alt="">
-      </div>
         <h2>Juniors</h2>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi! <br><br>
