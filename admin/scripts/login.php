@@ -52,7 +52,7 @@ function login($username, $password, $ip){
 
 function confirm_logged_in(){
     if(!isset($_SESSION['user_id'])){
-        redirect_to('confirm_user.php');
+        redirect_to('index.php');
     }
 }
 

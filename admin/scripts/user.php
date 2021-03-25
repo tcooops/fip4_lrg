@@ -15,11 +15,12 @@ function createUser($fname, $username, $password, $email){
             ':email'=>$email,
         )
     );
-    if($create_user_result){
-        header( "refresh:5;url=../admin/index.php" );
-        return 'Your account has been created. You will be redirected in 5 seconds';
+ 
+    if($update_user_result){
+        header( "refresh:3;url=../admin/index.php" );
+        return 'Your profile has been created. You will be redirected in 3 seconds';
     }else{
-        return 'The user did not go through';
+        return 'Profile was not created.';
     }
 }
 
@@ -57,8 +58,8 @@ function editUser($user_data){
     );
 
     if($update_user_result){
-        header( "refresh:5;url=../admin/index.php" );
-        return 'Your profile has been updated. You will be redirected in 5 seconds';
+        header( "refresh:3;url=../admin/index.php" );
+        return 'Your profile has been updated. You will be redirected in 3 seconds';
     }else{
         return 'Profile was not updated.';
     }

@@ -80,12 +80,12 @@ if(isset($_POST['submit'])){
         <section class="admin">
             <div id="register-con">
                 <h2>Create An Account</h2>
-                <?php echo !empty($message)? $message: ''; ?>
+                <div class="redirect-msg">
+                    <?php echo !empty($message)? $message: ''; ?>
+                </div>
                 <form action="admin_register.php" method="post" class="register-form">
                     <label>First Name</label>
-                    <input type="text" name="fname" value="" placeholder="Bobby">
-                    <label>Last Name</label>
-                    <input type="text" name="lname" value="" placeholder="Orr">
+                    <input type="text" name="fname" value="" placeholder="Bobby Orr">
                     <label>Email</label>
                     <input type="email" name="email" value="" placeholder="bobbyorr@gmail.com">
                     <label>Username</label>
@@ -95,7 +95,7 @@ if(isset($_POST['submit'])){
                     <div id="login-submit">
                         <button class="admin_button" name="submit">Create Account</button>
                         <p id="admin_button">Already have an account? <a class="link" href="admin_login.php">Sign in!</a></p>
-                        <p>Back to <a class="link" href="../../index.php">home</a></p>
+                        <p>Back to <a class="link" href="../index.php">home</a></p>
                     </div>
                     
                 </form>
