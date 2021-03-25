@@ -11,10 +11,14 @@
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
     <?php include 'templates/header.php'; ?>
-        <section class="hero-con">
-            <h2 class="hidden">Membership</h2>
-            <div id="membership-hero"></div>
-            <div class="sign-in"><a href="login.php">Sign in</a></div>
+    <section class="top-hero">
+            <div id="hero-img-membership">
+            
+                <div class="hero-info">
+                    <h2>Membership</h2>
+                    <div class="sign-in"><a href="admin/login.php">Log in</a></div>
+                </div>
+            </div>
         </section>
         <section id="announcements">
             <h2>Announcements</h2>

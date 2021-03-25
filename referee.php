@@ -11,11 +11,15 @@
     <div class="main-container">
         <h1 class="hidden">London Referees Group</h1>
         <?php include 'templates/header.php'; ?>
-        <section id="the-referee-section" name="theReferee">   
-            <div class="inner-hero">
-                <h2 id="the-referee">The Referee</h2> 
-                <img src="" alt="">
+        <section class="top-hero">
+            <div id="hero-img-referee">
+            
+                <div class="hero-info">
+                    <h2>Our Partners</h2>
+                </div>
             </div>
+        </section>
+        <section id="the-referee-section" name="theReferee">   
             <div id="the-referee-con">
                 <div class="the-referee">
                     <h3 class="skewRight">The Role of the Referee</h3>
