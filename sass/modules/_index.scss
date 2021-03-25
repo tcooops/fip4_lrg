@@ -245,13 +245,14 @@ svg:hover {
     
     .the-referee-section {
         margin: 0 auto;
-        width: 80%;
+        width: 80%;       
     }
 
     #the-referee-con { // container
         grid-template-columns: repeat(2, 1fr); 
         grid-gap: 2em; 
         width: 80%;
+        padding-top: 11em;
     }
     
     .the-referee {

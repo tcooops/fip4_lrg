@@ -13,14 +13,15 @@
     <?php include 'templates/header.php'; ?>
         <section class="top-hero">
             <div id="hero-img-partners">
-                <div class="">
-
+            
+                <div class="hero-info">
+                    <h2>Our Partners</h2>
                 </div>
             </div>
         </section>
         <section>
             <div id="partners-con">
-                <h2>Our Partners</h2>
+                <h2 class="hidden">Our Partners</h2>
                 <ul>
                     <li class="partner">
                         <a href="https://www.hockeycanada.ca/en-ca/home" target="new"><img src="public/images/partners_hockeyCan.png" alt="Hockey Canada"></a>
