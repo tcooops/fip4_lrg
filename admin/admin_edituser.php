@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
         <div class="edit-user">
             <h2>Welcome, <?php echo $_SESSION['user_name'];?>!</h2>
             <h4>Edit your profile details</h4>
-            <?php echo !empty($message)?$message:'';?>
+            <div class="redirect-msg"> <?php echo !empty($message)?$message:'';?></div>
             <?php if(!empty($current_user)):?>
 
             <form class="register-form" action="admin_edituser.php" method="post">
