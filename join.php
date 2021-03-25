@@ -13,7 +13,6 @@
     <?php include 'templates/header.php'; ?>
     <section class="top-hero">
             <div id="hero-img-join">
-            
                 <div class="hero-info">
                     <h2>Join Us</h2>
                 </div>
@@ -34,7 +33,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? <br><br>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.
         </p>
-        
+
       <div id="contacts">
           <h2 >Officials</h2>
           <p>

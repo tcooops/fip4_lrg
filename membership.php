@@ -16,7 +16,7 @@
             
                 <div class="hero-info">
                     <h2>Membership</h2>
-                    <div class="sign-in"><a href="admin/login.php">Log in</a></div>
+                    <div class="generic-button"><a href="admin/login.php">Log in</a></div>
                 </div>
             </div>
         </section>
