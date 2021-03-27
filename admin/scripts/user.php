@@ -4,23 +4,23 @@ function createUser($fname, $username, $password, $email){
     $create_user_query = 'INSERT INTO tbl_user(user_fname, user_name, user_pass, user_email, user_ip)';
     $create_user_query .= ' VALUES(:fname, :username, :password, :email, "no" )';
 
-    $user_encrypted_password = password_hash($user_password, PASSWORD_DEFAULT); // password encryption
-
     $create_user_set = $pdo->prepare($create_user_query);
     $create_user_result = $create_user_set->execute(
         array(
             ':fname'=>$fname,
             ':username'=>$username,
-            ':password'  => $user_encrypted_password, // this is what will send the encrypted password
+            ':password'=>$password,
             ':email'=>$email,
         )
     );
  
-    if($update_user_result){
-        header( "refresh:3;url=../admin/index.php" );
-        return 'Your profile has been created. You will be redirected in 3 seconds';
+    if($create_user_result){
+        sleep (3);
+        header( "refresh:3;url=../admin/admin_login.php" );
+        return 'Success! Your profile has been created. You will be redirected in 3 seconds';
     }else{
         return 'Profile was not created.';
+        
     }
 }
 
@@ -59,6 +59,7 @@ function editUser($user_data){
 
     if($update_user_result){
         header( "refresh:3;url=../admin/index.php" );
+        //redirect_to("../admin/index.php");
         return 'Your profile has been updated. You will be redirected in 3 seconds';
     }else{
         return 'Profile was not updated.';
