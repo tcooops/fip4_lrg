@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LRG</title>
+    <title>LRG - The Referee</title>
     <?php include 'templates/links.php'; ?>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <div id="hero-img-referee">
             
                 <div class="hero-info">
-                    <h2>Our Partners</h2>
+                    <h2>The Referee</h2>
                 </div>
             </div>
         </section>
