@@ -13,10 +13,9 @@
     <?php include 'templates/header.php'; ?>
     <section class="top-hero">
             <div id="hero-img-membership">
-            
                 <div class="hero-info">
                     <h2>Membership</h2>
-                    <div class="generic-button"><a href="admin/login.php">Log in</a></div>
+                    <div class="generic-button"><a href="admin/admin_login.php">Log in</a></div>
                 </div>
             </div>
         </section>
@@ -61,31 +60,31 @@
                 </p>
              </div>
         </section>
-        <section id="the-referee-section">   
-            <div class="inner-hero">
+        <section id="skill-building-section">   
+            <div class="inner-hero" id="inner-skill-building">
                 <h2 id="the-referee">Skill Building with LRG</h2> 
                 <img src="" alt="">
             </div>
-                <div id="the-referee-con">
-                    <div class="the-referee">
-                        <h3 class="skewRight">Skill Building</h3>
+                <div id="skill-building-con">
+                    <div class="skill-building">
+                        <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci quos, ut cupiditate alias culpa laudantium voluptas quisquam magnam doloribus possimus. Voluptates excepturi praesentium fugit! Pariatur dolorum dolores provident enim?</p>
                         <div class="left-button"><a href="#">Read More</a></div>
                     </div>
-                    <div class="the-referee">
+                    <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa autem voluptates voluptatibus architecto? Repellat est commodi reiciendis ea ipsum illo, cum perferendis tenetur ab consequuntur facilis autem nihil voluptate!</p>
                         <div class="left-button"><a href="#">Read More</a></div>
                     </div>
-                    <div class="the-referee">
+                    <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias voluptates impedit aliquam, dolor, nihil sit deserunt laborum nulla reprehenderit quos, officia quo inventore. Repudiandae impedit sequi fugiat quidem odit.</p>
                         <div class="left-button"><a href="#">Read More</a></div>
                     </div>
-                    <div class="the-referee">
+                    <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at doloremque repellendus fuga tenetur, temporibus nemo provident architecto repudiandae eaque quae ipsa, earum nesciunt iure necessitatibus soluta ad maxime labore.</p>
