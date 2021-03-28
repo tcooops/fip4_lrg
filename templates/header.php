@@ -4,7 +4,7 @@
                 <p id="banner1">London Referees Group</p>
                 <div id="banner2">
                     <div class="top-login">
-                        <a href="admin/admin_login.php">Sign in</a>
+                        <a href="admin/admin_login.php">Log in</a>
                     </div>
                     <div class="top-socials">
                         <ul>
@@ -34,7 +34,7 @@
                         </ul>
                         <div id="burger-login">
                             <div class="top-login">
-                                <a href="admin/admin_login.php">Sign in</a>
+                                <a href="admin/admin_login.php">Log in</a>
                             </div>
                         </div>
                         <div id="burger-legal">

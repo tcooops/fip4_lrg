@@ -13,7 +13,6 @@
     <?php include 'templates/header.php'; ?>
         <section class="top-hero">
             <div id="hero-img-partners">
-            
                 <div class="hero-info">
                     <h2>Our Partners</h2>
                 </div>
