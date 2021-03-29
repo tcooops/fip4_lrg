@@ -9,7 +9,7 @@
 <body>
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
-    < class="main-container">
+    <div class="main-container">
     <?php include 'templates/header.php'; ?>
     <section class="top-hero">
             <div id="hero-img-membership">
