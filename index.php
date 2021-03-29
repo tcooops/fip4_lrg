@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/vue"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LRG</title>
     <?php include 'templates/links.php'; ?>
+    <?php include 'templates/lightbox.php'; ?>
 </head>
 <body>
-<main>
+<main id="app">
     <div class="main-container">
         <h1 class="hidden">London Referees Group</h1>
         <?php include 'templates/header.php'; ?>
@@ -26,6 +28,7 @@
                 <h2 class="hidden">What we do</h2>
                 <div id="what-we-do-con">
                     <div class="what-we-do">
+                    
                     <svg class="index-icon circle" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 75.6 76.5" xml:space="preserve">
                     <defs/>
                     <style>
@@ -39,9 +42,14 @@
                     <path d="M30.2 40.8c-2.4-4.1-7.3-3.2-11.5-3.1-6.4.2-7.8 8-7.8 13.2" class="st3"/>
                     <circle cx="21.8" cy="27.2" r="6.2" class="st4"/>
                     </svg>
+
                     <h3>Who We Are</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas delectus mollitia eum similique eius iure maxime ullam, ipsam esse cum sequi voluptates impedit corporis debitis doloribus optio placeat molestiae.</p>
-                    <div class="generic-button"><a href="#">Read More</a></div>
+                    <p>We are London Referees Group. We provide referees for hockey matches in London and the surrounding areas. We offer training for all our referees as well as a Junior Mentorship program for younger folks interested in becoming referees.</p>
+                    <div class="generic-button" id="show-modal" @click="showModalAbout = true"><a>Read More</a></div>
+                    <modal v-if="showModalAbout" @close="showModalAbout = false">
+                        <h3 slot="header">Who we are</h3>
+                        <p class="modal-p" slot="body">We are London Referees Group. We provide referees for hockey matches in London and the surrounding areas. We offer training for all our referees as well as a Junior Mentorship program for younger folks interested in becoming referees.</p>
+                    </modal>
                 </div>
                 <div class="what-we-do">
                     <svg class="index-icon circle" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 76.7 75.1" xml:space="preserve">
@@ -55,7 +63,11 @@
                     </svg>
                     <h3>Services We Provide</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas delectus mollitia eum similique eius iure maxime ullam, ipsam esse cum sequi voluptates impedit corporis debitis doloribus optio placeat molestiae.</p>
-                    <div class="generic-button"><a href="#">Read More</a></div>
+                    <div class="generic-button" id="show-modal" @click="showModalServices = true"><a>Read More</a></div>
+                    <modal v-if="showModalServices" @close="showModalServices = false">
+                        <h3 slot="header">Services We Provide</h3>
+                        <p class="modal-p" slot="body">We provide all refereeing services for your hockey match.</p>
+                    </modal>
                 </div>
                 <div class="what-we-do">
                     <svg class="index-icon circle" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 77 78" xml:space="preserve">
@@ -70,7 +82,7 @@
                     </svg>
                     <h3>The Referee</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas delectus mollitia eum similique eius iure maxime ullam, ipsam esse cum sequi voluptates impedit corporis debitis doloribus optio placeat molestiae.</p>
-                    <div class="generic-button"><a href="#">Read More</a></div>
+                    <div class="generic-button"><a href="referee.php">Read More</a></div>
                 </div>
             </div>
         </section>
@@ -127,6 +139,19 @@
           <?php include 'templates/footer.php'; ?>
     </div>
 </main>
+<script>
+      Vue.component("modal", {
+        template: "#modal-template"
+      });
+
+      new Vue({
+        el: "#app",
+        data: {
+          showModalAbout: false,
+          showModalServices: false
+        }
+      });
+    </script>
 <?php include 'templates/bottomLinks.php'; ?>
 </body>
 </html>

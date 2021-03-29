@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="https://unpkg.com/vue"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LRG - Membership</title>
     <?php include 'templates/links.php'; ?>
+    <?php include 'templates/lightbox.php'; ?>
 </head>
 <body>
 <main id="app">
@@ -148,25 +150,41 @@
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci quos, ut cupiditate alias culpa laudantium voluptas quisquam magnam doloribus possimus. Voluptates excepturi praesentium fugit! Pariatur dolorum dolores provident enim?</p>
-                        <div class="left-button"><a href="#">Read More</a></div>
+                        <div class="left-button" id="show-modal" @click="showModalSkills1 = true">Read More</div>
+                        <modal v-if="showModalSkills1" @close="showModalSkills1 = false">
+                            <h3 slot="header">Skills 1</h3>
+                            <p class="modal-p" slot="body">Skills</p>
+                        </modal>  
                     </div>
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa autem voluptates voluptatibus architecto? Repellat est commodi reiciendis ea ipsum illo, cum perferendis tenetur ab consequuntur facilis autem nihil voluptate!</p>
-                        <div class="left-button"><a href="#">Read More</a></div>
+                        <div class="left-button" id="show-modal" @click="showModalSkills2 = true">Read More</div>
+                        <modal v-if="showModalSkills2" @close="showModalSkills2 = false">
+                            <h3 slot="header">Skills 2</h3>
+                            <p class="modal-p" slot="body">Skills skills</p>
+                        </modal>  
                     </div>
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias voluptates impedit aliquam, dolor, nihil sit deserunt laborum nulla reprehenderit quos, officia quo inventore. Repudiandae impedit sequi fugiat quidem odit.</p>
-                        <div class="left-button"><a href="#">Read More</a></div>
+                        <div class="left-button" id="show-modal" @click="showModalSkills3 = true">Read More</div>
+                        <modal v-if="showModalSkills3" @close="showModalSkills3 = false">
+                            <h3 slot="header">Skills 3</h3>
+                            <p class="modal-p" slot="body">Skills skills skills</p>
+                        </modal>                       
                     </div>
                     <div class="skill-building">
                         <h3>Skill Building</h3>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at doloremque repellendus fuga tenetur, temporibus nemo provident architecto repudiandae eaque quae ipsa, earum nesciunt iure necessitatibus soluta ad maxime labore.</p>
-                        <div class="left-button"><a href="#">Read More</a></div>
+                        <div class="left-button" id="show-modal" @click="showModalSkills4 = true">Read More</div>
+                        <modal v-if="showModalSkills4" @close="showModalSkills4 = false">
+                            <h3 slot="header">Skills 4</h3>
+                            <p class="modal-p" slot="body">Skills skills skills skills</p>
+                        </modal>  
                     </div>
                 </div>
           </section>
@@ -180,23 +198,23 @@
         <template>
             <div class="calendar-con">
                 <div class="day-box">
-                    <span class="date">March 31st 2021</span>
+                    <span class="date"></span>
                 </div>
                 <div class="cal-details">
                     <div>
                         <h3 for="teams">Match:</h3>    
-                        <p name="teams">Hurricanes vs Eskimos</p>
+                        <p name="teams"></p>
                     </div>
                     <div>
                         <h3 for="location">Location:</h3>
-                        <p name="location">Elements Arena</p>
+                        <p name="location"></p>
                     </div>
                     <div >
                         <h3 for="refs">Refs Assigned:</h3>
                         <ul name="refs" class="refs">
-                            <li>Thomas Chabot</li>
-                            <li>Erik Gudbranson</li>
-                            <li>Brady Tkackuk</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                         
                     </div>
@@ -204,6 +222,21 @@
             </div>
         </template>
 
+<script>
+      Vue.component("modal", {
+        template: "#modal-template"
+      });
+
+      new Vue({
+        el: "#app",
+        data: {
+          showModalSkills1: false,
+          showModalSkills2: false,
+          showModalSkills3: false,
+          showModalSkills4: false
+        }
+      });
+    </script>
 <?php include 'templates/bottomLinks.php'; ?>
 </body>
 </html>
