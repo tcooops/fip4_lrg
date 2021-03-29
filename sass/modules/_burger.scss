@@ -114,7 +114,7 @@ z-index tracker:
 }
 
 #burger-con.slide-toggle {
-	position: absolute;
+	position: fixed;
 	display: block;
 	//thisiswhatmakesthemenuappearuponclicktext-align: left;
 	z-index: 9; 
