@@ -9,7 +9,7 @@
 <body>
 <main id="app">
     <h1 class="hidden">London Referees Group</h1>
-    <div class="main-container">
+    < class="main-container">
     <?php include 'templates/header.php'; ?>
     <section class="top-hero">
             <div id="hero-img-membership">
@@ -27,9 +27,87 @@
                 <div id="upcoming-ann">Upcoming announcements</div>
                 <div id="weeks-ann">This week's announcements</div>
             </div>
-            <div id="sched-button">
-                <button>View full schedule</button>
+        </section>
+        <section id="schedule-section">
+            <h2>Upcoming Games Schedule</h2>
+            <div class="calendar-con">
+                <div class="day-box">
+                    <span class="date">March 31st 2021</span>
+                </div>
+                <div class="cal-details">
+                    <div>
+                        <h3 for="teams">Match:</h3>    
+                        <p name="teams">Senators at Leafs</p>
+                    </div>
+                    <div>
+                        <h3 for="location">Location:</h3>
+                        <p name="location">Soctiabank Arena</p>
+                    </div>
+                    <div >
+                        <h3 for="refs">Refs Assigned:</h3>
+                        <ul name="refs" class="refs">
+                            <li>Thomas Chabot</li>
+                            <li>Erik Gudbranson</li>
+                            <li>Brady Tkackuk</li>
+                        </ul>
+                        
+                    </div>
+                </div>
             </div>
+
+            <div class="calendar-con">
+                <div class="day-box">
+                    <span class="date">April 2nd 2021</span>
+                </div>
+                <div class="cal-details">
+                    <div>
+                        <h3 for="teams">Match:</h3>    
+                        <p name="teams">Senators at Canadiens</p>
+                    </div>
+                    <div>
+                        <h3 for="location">Location:</h3>
+                        <p name="location">Centre Bell</p>
+                    </div>
+                    <div >
+                        <h3 for="refs">Refs Assigned:</h3>
+                        <ul name="refs" class="refs">
+                            <li>Thomas Chabot</li>
+                            <li>Erik Gudbranson</li>
+                            <li>Brady Tkackuk</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="calendar-con">
+                <div class="day-box">
+                    <span class="date">April 4th 2021</span>
+                </div>
+                <div class="cal-details">
+                    <div>
+                        <h3 for="teams">Match:</h3>    
+                        <p name="teams">Senators at Canucks</p>
+                    </div>
+                    <div>
+                        <h3 for="location">Location:</h3>
+                        <p name="location">Rogers Arena</p>
+                    </div>
+                    <div >
+                        <h3 for="refs">Refs Assigned:</h3>
+                        <ul name="refs" class="refs">
+                            <li>Thomas Chabot</li>
+                            <li>Erik Gudbranson</li>
+                            <li>Brady Tkackuk</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+
         </section>
         <section>
             <div class="inner-hero">
@@ -99,6 +177,33 @@
         <?php include 'templates/footer.php'; ?>
   </div>
 </main>
+        <template>
+            <div class="calendar-con">
+                <div class="day-box">
+                    <span class="date">March 31st 2021</span>
+                </div>
+                <div class="cal-details">
+                    <div>
+                        <h3 for="teams">Match:</h3>    
+                        <p name="teams">Hurricanes vs Eskimos</p>
+                    </div>
+                    <div>
+                        <h3 for="location">Location:</h3>
+                        <p name="location">Elements Arena</p>
+                    </div>
+                    <div >
+                        <h3 for="refs">Refs Assigned:</h3>
+                        <ul name="refs" class="refs">
+                            <li>Thomas Chabot</li>
+                            <li>Erik Gudbranson</li>
+                            <li>Brady Tkackuk</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </template>
+
 <?php include 'templates/bottomLinks.php'; ?>
 </body>
 </html>
