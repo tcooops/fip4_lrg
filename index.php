@@ -14,9 +14,11 @@
         <h1 class="hidden">London Referees Group</h1>
         <?php include 'templates/header.php'; ?>
             <section class="hero-video">
+                <h2 class="hidden">LRG Intro Video</h2>
                 <video autoplay controls muted loop>
                     <source src="public/images/hero.mp4" type="video/mp4">
-                <!-- <source src="hero.ogg" type="video/ogg"> -->
+                    <source src="hero.ogg" type="video/ogg">
+                    <source src="hero.webm" type="video/webm">
                     Your browser does not support the video tag
                 </video>
             </section>

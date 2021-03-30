@@ -14,7 +14,7 @@
     <section class="top-hero">
             <div id="hero-img-join">
                 <div class="hero-info">
-                    <h2>Join Us</h2>
+                    <h2 class="hidden">Join Us</h2>
                 </div>
             </div>
     </section>

@@ -17,7 +17,7 @@
             <div id="hero-img-referee">
             
                 <div class="hero-info">
-                    <h2>The Referee</h2>
+                    <h2 class="hidden">The Referee</h2>
                 </div>
             </div>
         </section>
