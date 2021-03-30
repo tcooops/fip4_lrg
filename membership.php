@@ -16,8 +16,7 @@
     <section class="top-hero">
             <div id="hero-img-membership">
                 <div class="hero-info">
-                    <h2>Membership</h2>
-                    <div class="generic-button"><a href="admin/admin_login.php">Log in</a></div>
+                    <h2 class="hidden">Membership</h2>
                 </div>
             </div>
         </section>

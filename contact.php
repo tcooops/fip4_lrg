@@ -58,6 +58,13 @@
     <h1 class="hidden">London Referees Group</h1>
     <div class="main-container">
         <?php include 'templates/header.php'; ?>
+        <section class="top-hero">
+                <div id="hero-img-contact">
+                    <div class="hero-info">
+                        <h2 class="hidden">Get in touch</h2>
+                    </div>
+                </div>
+        </section>
         <section id="contact-main-con">
         <h2 class="hidden">Get in touch with LRG</h2>
             <div class="form-con">
