@@ -16,7 +16,7 @@
     <section class="top-hero">
             <div id="hero-img-membership">
                 <div class="hero-info">
-                    <h2 class="hidden">Membership</h2>
+                    <h2>Membership</h2>
                 </div>
             </div>
         </section>
@@ -118,24 +118,16 @@
             <div id="committee-con">
                 <div id="committee">                    
                     <ul>
-                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
-                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
-                       <li><svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
-                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
-                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
-                       <li><svg  class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:#ed2927;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,3A3,3,0,1,1,7,6,3,3,0,0,1,10,3Zm0,14.2A7.2,7.2,0,0,1,4,14c0-2,4-3.08,6-3.08S16,12,16,14A7.2,7.2,0,0,1,10,17.2Z"/></g></g></svg></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img src="public/images/icon_user.svg" alt="user"></li>
                     </ul>
-                    <div class="gallery-controls-member">
-                        <div class="prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs/><path d="M256 0C114.837 0 0 114.837 0 256s114.837 256 256 256 256-114.837 256-256S397.163 0 256 0zm57.749 347.584c8.341 8.341 8.341 21.824 0 30.165A21.275 21.275 0 01298.666 384a21.277 21.277 0 01-15.083-6.251L176.917 271.083c-8.341-8.341-8.341-21.824 0-30.165l106.667-106.667c8.341-8.341 21.824-8.341 30.165 0s8.341 21.824 0 30.165L222.165 256l91.584 91.584z"/></svg>
-                        </div>
-                        <div class="next">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs/><path d="M256 0C114.837 0 0 114.837 0 256s114.837 256 256 256 256-114.837 256-256S397.163 0 256 0zm79.083 271.083L228.416 377.749A21.275 21.275 0 01213.333 384a21.277 21.277 0 01-15.083-6.251c-8.341-8.341-8.341-21.824 0-30.165L289.835 256l-91.584-91.584c-8.341-8.341-8.341-21.824 0-30.165s21.824-8.341 30.165 0l106.667 106.667c8.341 8.341 8.341 21.823 0 30.165z"/></svg>
-                        </div>
-                    </div>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas enim placeat odio dolorem unde, sint error molestias! Unde delectus a inventore debitis molestias fugit placeat aliquid, ea veniam eaque.
+                    Our members are dedicated, trained professionals focused on making your game as fun as possible. 
                 </p>
              </div>
         </section>
