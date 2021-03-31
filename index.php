@@ -71,8 +71,8 @@
             </div>
         </section>
         <section id="certification">
-            <div class="inner-hero">
-                <img src="" alt="">
+            <div class="inner-hero" id="inner-hero-certification">
+                
             </div>
             <div id="certification-con">
                 <h2>Our Certifications</h2>

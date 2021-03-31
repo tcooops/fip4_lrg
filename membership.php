@@ -111,19 +111,18 @@
 
         </section>
         <section>
-            <div class="inner-hero">
+            <div class="inner-hero" id="inner-hero-committee">
                 <h2>Committee</h2>
-                <img src="" alt="">
             </div>
             <div id="committee-con">
                 <div id="committee">                    
                     <ul>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
                     </ul>
                 </div>
                 <p>
@@ -132,9 +131,9 @@
              </div>
         </section>
         <section id="skill-building-section">   
-            <div class="inner-hero" id="inner-skill-building">
-                <h2 id="the-referee">Skill Building with LRG</h2> 
-                <img src="" alt="">
+            <div class="inner-hero" id="inner-hero-skills">
+                <h2>Skill Building with LRG</h2>
+            </div>
             </div>
                 <div id="skill-building-con">
                     <div class="skill-building">

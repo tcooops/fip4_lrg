@@ -59,9 +59,10 @@
     <div class="main-container">
         <?php include 'templates/header.php'; ?>
         <section class="top-hero">
+        <h2 class="hidden">Get in touch</h2>
                 <div id="hero-img-contact">
                     <div class="hero-info">
-                        <h2 class="hidden">Get in touch</h2>
+                        
                     </div>
                 </div>
         </section>
