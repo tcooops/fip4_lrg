@@ -14,7 +14,7 @@
         <section class="top-hero">
             <div id="hero-img-partners">
                 <div class="hero-info">
-                    <h2 class="hidden">Our Partners</h2>
+                    <h2>Our Partners</h2>
                 </div>
             </div>
         </section>

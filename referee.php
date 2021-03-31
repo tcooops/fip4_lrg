@@ -15,9 +15,8 @@
         <?php include 'templates/header.php'; ?>
         <section class="top-hero">
             <div id="hero-img-referee">
-            
                 <div class="hero-info">
-                    <h2 class="hidden">The Referee</h2>
+                    <h2>The Referee</h2>
                 </div>
             </div>
         </section>
