@@ -82,7 +82,6 @@ svg:hover {
 }
 
 #covid-update {
-    height: 800px;
     display: flex;
     flex-direction: column;
     width: 80%; // should fix the centering of the split photos on mobile?
@@ -108,6 +107,10 @@ svg:hover {
     }
     #certification-con {
         margin: 0 auto;
+        #training {
+            margin: 0 auto;
+
+        }
     }
     #contacts {
         margin-top: 5em;
@@ -172,7 +175,9 @@ svg:hover {
     }
 }
 
-
+#link {
+    color: $orange;
+}
 
 @media screen and (min-width: 64em) { /* 1024px */
     #main-index {
@@ -216,6 +221,7 @@ svg:hover {
         margin: 0 auto;
         justify-content: space-between;
         .covid-img:hover {
+            cursor: pointer;
             opacity: 60%;
             transition: $smooth;
             -webkit-transition: $smooth;
@@ -264,6 +270,10 @@ svg:hover {
         p {
             font-size: 1.3em;
         }
+    }
+    #link:hover {
+        font-style: italic;
+        cursor: pointer;
     }
 }
 

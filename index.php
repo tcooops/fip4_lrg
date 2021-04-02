@@ -24,7 +24,7 @@
             </section>
             <section id="main-index">
                 <h2>We are the London Referees Group</h2>
-                <p>“Lorem ipsum blurb or phrase here Lorem ipsum blurb or phrase here Lorem ipsum blurb“</p>
+                <p>“The London Referees Group is committed to providing a high standard and quality hockey officiating in the City of London and surrounding area.“</p>
             </section>
             <section id="what-we-do-section">
                 <h2 class="hidden">What we do</h2>
@@ -34,27 +34,33 @@
                     <img src="public/images/icon_us2.svg" alt=""  class="index-icon circle">
 
                     <h3>Who We Are</h3>
-                    <p>We are London Referees Group. We provide referees for hockey matches in London and the surrounding areas. We offer training for all our referees as well as a Junior Mentorship program for younger folks interested in becoming referees.</p>
+                    <p>Our vision is to promote the game of hockey through fair and safe play, and a respect for all individuals involved in the game </p>
                     <div class="generic-button" id="show-modal" @click="showModalAbout = true"><a>Read More</a></div>
                     <modal v-if="showModalAbout" @close="showModalAbout = false">
                         <h3 slot="header">Who we are</h3>
-                        <p class="modal-p" slot="body">We are London Referees Group. We provide referees for hockey matches in London and the surrounding areas. We offer training for all our referees as well as a Junior Mentorship program for younger folks interested in becoming referees.</p>
+                        <p class="modal-p" slot="body">In 2007, the London Referee Group, also known as the LRG, was established. This was the merger of the Forest City Referees Association (FCRA) and the London Hockey Referees Association (LHRA).
+                        London Referees Group is a non-profit membership-based organization that acts as a resource for hockey officials in the City of London and surrounding area.
+                        The LRG provides on ice officials for games at various levels of hockey, such as: minor hockey, high school, sledge, and adult. As an organization we strive to maintain an environment that embodies the core values of integrity, leadership, perseverance, respect and teamwork while enhancing self-esteem, promoting self-confidence and cultivating a lifelong passion for the game.
+                        LRG members commit to representing the vision and mission of the London Referees Group. They encourage a high standard of ethics, closer cooperation, and understanding of the role of the referee among officials, coaches, players, parents, the community and the media. Membership requires a one-time application and statement of interest. Membership is open to all genders, ages 14 and up.
+                        As an organization, we are focused on developing and maintaining a membership consisting of experienced and capable on ice officials. They are advocates for the ideals of good sportsmanship and fair play through qualified officiating in hockey and respect for the authority of hockey officials at all levels of competition. 
+                        The executive leadership of the LRG supports ongoing development of its members by promotion of education and training programs that advance the skills of hockey officials. As well, as providing information programs to coaches, parents, and community members that advocate for a stronger understanding for the role of the on-ice officials and the competence of these individuals.
+                        </p>
                     </modal>
                 </div>
                 <div class="what-we-do">
                     <img src="public/images/icon_services2.svg" alt=""  class="index-icon circle">
                     <h3>Services We Provide</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas delectus mollitia eum similique eius iure maxime ullam, ipsam esse cum sequi voluptates impedit corporis debitis doloribus optio placeat molestiae.</p>
+                    <p>London Referees Group will provide all refereeing services for leagues in the London and the surrounding areas. We offer training, certifications, and more!</p>
                     <div class="generic-button" id="show-modal" @click="showModalServices = true"><a>Read More</a></div>
                     <modal v-if="showModalServices" @close="showModalServices = false">
                         <h3 slot="header">Services We Provide</h3>
-                        <p class="modal-p" slot="body">We provide all refereeing services for your hockey match.</p>
+                        <p class="modal-p" slot="body">London Referees Group will provide all refereeing services for leagues in the London and the surrounding areas. As for our staff, LRG provides full training for those who make the team. <a href="contact.php" id="link">Contact us today</a> if you're interested in becoming a referee or know someone who is interested in joining our Junior Mentorship Program</p>
                     </modal>
                 </div>
                 <div class="what-we-do">
                     <img src="public/images/icon_whistle2.svg" alt=""  class="index-icon circle">
                     <h3>The Referee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas delectus mollitia eum similique eius iure maxime ullam, ipsam esse cum sequi voluptates impedit corporis debitis doloribus optio placeat molestiae.</p>
+                    <p>What is the importance of the referee? What does a referee do? The answers to all your burning referee questions...</p>
                     <div class="generic-button"><a href="referee.php">Read More</a></div>
                 </div>
             </div>
@@ -63,31 +69,45 @@
         <section class="covid-section"> 
             <div class="covid-update">
                 <h2><span class="bold">COVID-19</span> <br><span class="thin">UPDATE</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione officia sit quo commodi nisi quae vero eveniet veniam expedita maiores vitae molestias minima, labore obcaecati beatae quam culpa praesentium?</p>
+                <p>Currently, we are entering a province wide lockdown meaning no games are currently being played in any leagues in London or the surrounding areas. Stay tuned for more information soon!</p>
             </div>
             <div id="covid-update">
-                <a href="#"><img class="covid-img" src="public/images/index_covid.png" alt="" width="500" ></a>
-                <a href="#"><img class="covid-img" src="public/images/index_mentorship.png" alt="" width="500"></a>
+                <img  @click="showModalCovid = true" class="covid-img" src="public/images/index_covid.png" alt="" width="500" >
+                <img @click="showModalJMP = true" class="covid-img" src="public/images/index_mentorship.png" alt="" width="500">
             </div>
+            <modal v-if="showModalCovid" @close="showModalCovid = false">
+                <h3 slot="header">Important COVID-19 Information</h3>
+                <p class="modal-p" slot="body">Currently, we are entering a province wide lockdown meaning no games are currently being played in any leagues in London or the surrounding areas. Stay tuned for more information soon!</p>
+            </modal>
+            <modal v-if="showModalJMP" @close="showModalJMP = false">
+                <h3 slot="header">Junior Mentorship Program</h3>
+                <p class="modal-p" slot="body">The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of<br>
+Decision making skills<br>
+On ice awareness as an official<br>
+Communication skills<br>
+Applying the rules of the game to promote safe and fair play<br>
+As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.
+</p>
+            </modal>
         </section>
         <section id="certification">
             <div class="inner-hero" id="inner-hero-certification">
                 
             </div>
             <div id="certification-con">
-                <h2>Our Certifications</h2>
+                <h2>Training</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi! <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.
+                Officials play a vital role in the game, they are often described as the third team on the ice. The basic role of the on-ice officials can be broken down into two simple words – safe and fair. For a referee to view and officiate the game with these two words in mind, they should be able to call a game that is acceptable to all of the participants.
+                The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of decision making skills, on ice awareness as an official, communication skills, etc.
+                Applying the rules of the game to promote safe and fair play
+                As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.</p>
                 </p>
                 <div id="contacts">
-                    <h2 >Contacts</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam, totam autem repudiandae ratione laboriosam deleniti modi, expedita voluptatum nesciunt id exercitationem, doloremque iure temporibus commodi illum iste doloribus. Nisi!
-                        <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, neque corporis! Temporibus officia aperiam sapiente! Illum numquam eveniet eum dolore. Illo, numquam asperiores? Obcaecati tempore itaque vel voluptate sequi! Blanditiis? 
-                        <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate impedit placeat beatae nostrum excepturi ea nam, recusandae doloremque, delectus rem necessitatibus quibusdam! Mollitia blanditiis, molestiae exercitationem ducimus porro ullam rem.</p>
+                    <h2 >Our Priorities</h2>
+                    <p>Responsibility – being physically and mentally prepared for each game.<br>
+                    Education & Training – providing resources to continue the development of officials and provide training and mentorship for young officials to develop their skills.<br>
+                    Partnership – building positive relationships with hockey associations, other officiating associations, and members of the community.
+                    </p>
                 </div>
             </div>
         </section>
@@ -121,7 +141,9 @@
         el: "#app",
         data: {
           showModalAbout: false,
-          showModalServices: false
+          showModalServices: false,
+          showModalCovid: false,
+          showModalJMP: false
         }
       });
     </script>
