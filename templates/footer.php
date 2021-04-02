@@ -10,12 +10,9 @@
                     <li><a href="contact.php">Contact Us</a></li>       
                 </ul>
                 <ul id="footer-info">
-                    <li><a href="">Bylaws</a></li>
-                    <li><a href="">COVID-19</a></li>
-                    <li><a href="">Supervisors</a></li>
                     <li><a href="">Report a Crime Offence</a></li>
                     <li><a href="">Match Penalty Reports</a></li>
-                    <li><a href="">Brand Guidelines</a></li>
+                    <li><a href="public/images/LRGbrand.pdf">Brand Guidelines</a></li>
                 </ul>
                 <ul id="copyright">
                     <li>Copyright © 2021</li>

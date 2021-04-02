@@ -86,10 +86,10 @@ if(isset($_POST['submit'])){
                 <form action="admin_register.php" method="post" class="register-form">
                     <label>First Name</label>
                     <input type="text" name="fname" value="" placeholder="Bobby Orr">
-                    <label>Email</label>
-                    <input type="email" name="email" value="" placeholder="bobbyorr@gmail.com">
                     <label>Username</label>
                     <input type="text" name="username" value="" placeholder="Username">
+                    <label>Email</label>
+                    <input type="email" name="email" value="" placeholder="bobbyorr@gmail.com">
                     <label>Password</label>
                     <input type="password" name="password" value="" placeholder="Make it secure!">
                     <div id="login-submit">

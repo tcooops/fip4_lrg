@@ -112,75 +112,24 @@
         </section>
         <section>
             <div class="inner-hero" id="inner-hero-committee">
-                <h2>Committee</h2>
+                <h2 id="committeetitle">Committee</h2>
             </div>
             <div id="committee-con">
                 <div id="committee">                    
                     <ul>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"></li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>President –Josh Ackworth</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>VP–Joe Masse</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Referee In Chief- Bobby Wright</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Secretary-Mark Lemieux</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Treasurer-Rob Neable</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Membership Rep1- Paul Raes</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Membership Rep2-Melanie Alexander</li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Assignor 1-Marc Giroux </li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Assignor 2-Jamie Dewar </li>
+                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Scheduler-Paul Schofield</li>
                     </ul>
                 </div>
-                <p>
-                    Our members are dedicated, trained professionals focused on making your game as fun as possible. 
-                </p>
              </div>
-        </section>
-        <section id="skill-building-section">   
-            <div class="inner-hero" id="inner-hero-skills">
-                <h2>Skill Building with LRG</h2>
-            </div>
-            </div>
-                <div id="skill-building-con">
-                    <div class="skill-building">
-                        <h3>Skill Building</h3>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci quos, ut cupiditate alias culpa laudantium voluptas quisquam magnam doloribus possimus. Voluptates excepturi praesentium fugit! Pariatur dolorum dolores provident enim?</p>
-                        <div class="left-button" id="show-modal" @click="showModalSkills1 = true">Read More</div>
-                        <modal v-if="showModalSkills1" @close="showModalSkills1 = false">
-                            <h3 slot="header">Skills 1</h3>
-                            <p class="modal-p" slot="body">Skills</p>
-                        </modal>  
-                    </div>
-                    <div class="skill-building">
-                        <h3>Skill Building</h3>
-                        <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa autem voluptates voluptatibus architecto? Repellat est commodi reiciendis ea ipsum illo, cum perferendis tenetur ab consequuntur facilis autem nihil voluptate!</p>
-                        <div class="left-button" id="show-modal" @click="showModalSkills2 = true">Read More</div>
-                        <modal v-if="showModalSkills2" @close="showModalSkills2 = false">
-                            <h3 slot="header">Skills 2</h3>
-                            <p class="modal-p" slot="body">Skills skills</p>
-                        </modal>  
-                    </div>
-                    <div class="skill-building">
-                        <h3>Skill Building</h3>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias voluptates impedit aliquam, dolor, nihil sit deserunt laborum nulla reprehenderit quos, officia quo inventore. Repudiandae impedit sequi fugiat quidem odit.</p>
-                        <div class="left-button" id="show-modal" @click="showModalSkills3 = true">Read More</div>
-                        <modal v-if="showModalSkills3" @close="showModalSkills3 = false">
-                            <h3 slot="header">Skills 3</h3>
-                            <p class="modal-p" slot="body">Skills skills skills</p>
-                        </modal>                       
-                    </div>
-                    <div class="skill-building">
-                        <h3>Skill Building</h3>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at doloremque repellendus fuga tenetur, temporibus nemo provident architecto repudiandae eaque quae ipsa, earum nesciunt iure necessitatibus soluta ad maxime labore.</p>
-                        <div class="left-button" id="show-modal" @click="showModalSkills4 = true">Read More</div>
-                        <modal v-if="showModalSkills4" @close="showModalSkills4 = false">
-                            <h3 slot="header">Skills 4</h3>
-                            <p class="modal-p" slot="body">Skills skills skills skills</p>
-                        </modal>  
-                    </div>
-                </div>
-          </section>
-        </section>
-        <section> <!-- gallery -->
-            <!-- Hien can grab this stuff from the database-->
         </section>
         <?php include 'templates/footer.php'; ?>
   </div>
