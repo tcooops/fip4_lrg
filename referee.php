@@ -45,6 +45,10 @@
                 </div>
             </div>
           </section>
+          <section class="great-ref">
+              <h2>What makes a great ref?</h2>
+              <img class="join-ad" src="public/images/referee_infographic.jpg" alt="Great Refs">
+          </section>
           <?php include 'templates/footer.php'; ?>
     </div> 
 </main>

@@ -38,11 +38,12 @@
                         <h3 slot="header">Who we are</h3>
                         <p class="modal-p" slot="body">In 2007, the London Referee Group, also known as the LRG, was established. This was the merger of the Forest City Referees Association (FCRA) and the London Hockey Referees Association (LHRA).
                         London Referees Group is a non-profit membership-based organization that acts as a resource for hockey officials in the City of London and surrounding area.
-                        The LRG provides on ice officials for games at various levels of hockey, such as: minor hockey, high school, sledge, and adult. As an organization we strive to maintain an environment that embodies the core values of integrity, leadership, perseverance, respect and teamwork while enhancing self-esteem, promoting self-confidence and cultivating a lifelong passion for the game.
-                        LRG members commit to representing the vision and mission of the London Referees Group. They encourage a high standard of ethics, closer cooperation, and understanding of the role of the referee among officials, coaches, players, parents, the community and the media. Membership requires a one-time application and statement of interest. Membership is open to all genders, ages 14 and up.
-                        As an organization, we are focused on developing and maintaining a membership consisting of experienced and capable on ice officials. They are advocates for the ideals of good sportsmanship and fair play through qualified officiating in hockey and respect for the authority of hockey officials at all levels of competition. 
-                        The executive leadership of the LRG supports ongoing development of its members by promotion of education and training programs that advance the skills of hockey officials. As well, as providing information programs to coaches, parents, and community members that advocate for a stronger understanding for the role of the on-ice officials and the competence of these individuals.
-                        </p>
+                        <br><br>
+                        As an organization, we are focused on developing and maintaining a membership consisting of experienced and capable on ice officials. They are advocates for the ideals of good sportsmanship and fair play through qualified officiating in hockey and respect for the authority of hockey officials at all levels of competition. <br><br>
+                        The executive leadership of the LRG supports ongoing development of its members by promotion of education and training programs that advance the skills of hockey officials. As well, as providing information programs to coaches, parents, and community members that advocate for a stronger understanding for the role of the on-ice officials and the competence of these individuals.<br><br>
+                        <button class="modal-button"><a href="public/images/lrg_infographic.pdf">Find out more!</a></button>    
+                    </p>
+                        
                     </modal>
                 </div>
                 <div class="what-we-do">
@@ -99,13 +100,12 @@
                 Applying the rules of the game to promote safe and fair play
                 As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.</p>
                 </p>
-                <div id="contacts">
-                    <h2 >Our Priorities</h2>
-                    <p>Responsibility – being physically and mentally prepared for each game.<br>
+            <div id="contacts">
+                <h2 >Our Priorities</h2>
+                <p>Responsibility – being physically and mentally prepared for each game.<br>
                     Education & Training – providing resources to continue the development of officials and provide training and mentorship for young officials to develop their skills.<br>
                     Partnership – building positive relationships with hockey associations, other officiating associations, and members of the community.
-                    </p>
-                </div>
+                </p>
             </div>
         </section>
         <section class="schedule-section">
