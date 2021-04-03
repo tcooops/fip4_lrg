@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 05, 2021 at 04:03 PM
+-- Generation Time: Apr 03, 2021 at 06:27 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -13,6 +13,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_lrg`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_matches`
+--
+
+CREATE TABLE `tbl_matches` (
+  `id` int(10) NOT NULL,
+  `names` varchar(30) NOT NULL,
+  `location` varchar(30) NOT NULL,
+  `refs` text NOT NULL,
+  `date` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_matches`
+--
+
+INSERT INTO `tbl_matches` (`id`, `names`, `location`, `refs`, `date`) VALUES
+(1, 'Senators at Leafs', 'Soctiabank Arena', 'Thomas Chabot\r\nErik Gudbranson\r\nBrady Tkackuk', 'March 31st 2021'),
+(2, 'Senators at Canadiens', 'Centre Bell', 'Thomas Chabot\r\nErik Gudbranson\r\nBrady Tkackuk', 'April 2nd 2021'),
+(3, 'Senators at Canucks', 'Rogers Arena', 'Thomas Chabot\r\nErik Gudbranson\r\nBrady Tkackuk', 'April 4th 2021');
 
 -- --------------------------------------------------------
 
@@ -34,13 +57,20 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_ip`) VALUES
-(1, 'Name', 'Name', '123', 'abc@gmail.com', '::1'),
-(3, 'abc', 'something', '456', 'xuanhien1110@gmail.com', 'no'),
-(4, 'qweqw', 'qweqwe', '456', 'xuanhien1110@gmail.com', 'no');
+(1, 'current name', 'newname', 'password', 'abc@gmail.com', '::1'),
+(2, 'new', 'hien', '345', 'nguyenalex1110@gmail.com', '::1'),
+(26, 'Hien Nguyen', 'admin', 'pass', 'xuanhien1110@gmail.com', 'no'),
+(27, 'New Acc', 'admin', '12345', 'xuanhien1110@gmail.com', 'no');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_matches`
+--
+ALTER TABLE `tbl_matches`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_user`
@@ -53,7 +83,13 @@ ALTER TABLE `tbl_user`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_matches`
+--
+ALTER TABLE `tbl_matches`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
