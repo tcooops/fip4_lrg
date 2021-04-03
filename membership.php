@@ -55,7 +55,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="calendar-con">
                 <div class="day-box">
                     <span class="date">April 2nd 2021</span>

@@ -30,9 +30,7 @@
                 <h2 class="hidden">What we do</h2>
                 <div id="what-we-do-con">
                     <div class="what-we-do">
-                    
                     <img src="public/images/icon_us2.svg" alt=""  class="index-icon circle">
-
                     <h3>Who We Are</h3>
                     <p>Our vision is to promote the game of hockey through fair and safe play, and a respect for all individuals involved in the game </p>
                     <div class="generic-button" id="show-modal" @click="showModalAbout = true"><a>Read More</a></div>
@@ -82,17 +80,16 @@
             <modal v-if="showModalJMP" @close="showModalJMP = false">
                 <h3 slot="header">Junior Mentorship Program</h3>
                 <p class="modal-p" slot="body">The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of<br>
-Decision making skills<br>
-On ice awareness as an official<br>
-Communication skills<br>
-Applying the rules of the game to promote safe and fair play<br>
-As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.
-</p>
+                Decision making skills<br>
+                On ice awareness as an official<br>
+                Communication skills<br>
+                Applying the rules of the game to promote safe and fair play<br>
+                As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.
+                </p>
             </modal>
         </section>
         <section id="certification">
             <div class="inner-hero" id="inner-hero-certification">
-                
             </div>
             <div id="certification-con">
                 <h2>Training</h2>
@@ -123,12 +120,7 @@ As part of this program we assign experienced officials as mentors to assist wit
             </div>
         <hr class="hr-schedule">
         </section>
-
     </div>
-          <!-- 
-            <div class="inner-hero">
-            <img src="" alt="">
-          -->
           <?php include 'templates/footer.php'; ?>
     </div>
 </main>
