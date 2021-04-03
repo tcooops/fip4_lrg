@@ -62,7 +62,6 @@
         <h2 class="hidden">Get in touch</h2>
                 <div id="hero-img-contact">
                     <div class="hero-info">
-                        
                     </div>
                 </div>
         </section>
@@ -98,11 +97,7 @@
                 <img class="pulse" src="public/images/icon_email.svg" alt="email">
                 <img class="pulse" src="public/images/icon_mail.svg" alt="mail">
             </div>
-
         </section>
-
-
-
         <?php include 'templates/footer.php'; ?>
     </div>
 </main>

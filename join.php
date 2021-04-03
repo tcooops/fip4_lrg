@@ -26,15 +26,11 @@
           </p>
           <div  id="certification-button"><a href="contact.php">Reach out!</a></div>
           <img id="join-ad" src="public/images/join_flyer.jpg" alt="ad">
-
-
       <div id="contacts">
           <h2 >Officials</h2>
           <p>
           Officials play a vital role in the game, they are often described as the third team on the ice. The basic role of the on-ice officials can be broken down into two simple words – safe and fair. For a referee to view and officiate the game with these two words in mind, they should be able to call a game that is acceptable to all of the participants.
-          </p>
-
-              
+          </p>   
         <h2>Juniors</h2>
         <p id="juniors">
         As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.
