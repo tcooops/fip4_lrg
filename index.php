@@ -41,7 +41,7 @@
                         <br><br>
                         As an organization, we are focused on developing and maintaining a membership consisting of experienced and capable on ice officials. They are advocates for the ideals of good sportsmanship and fair play through qualified officiating in hockey and respect for the authority of hockey officials at all levels of competition. <br><br>
                         The executive leadership of the LRG supports ongoing development of its members by promotion of education and training programs that advance the skills of hockey officials. As well, as providing information programs to coaches, parents, and community members that advocate for a stronger understanding for the role of the on-ice officials and the competence of these individuals.<br><br>
-                        <button class="modal-button"><a href="public/images/lrg_infographic.pdf">Find out more!</a></button>    
+                        <button class="modal-button"><a target="new" href="public/images/lrg_infographic.pdf">Find out more!</a></button>    
                     </p>
                         
                     </modal>
