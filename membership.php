@@ -114,25 +114,53 @@
                 <h2 id="committeetitle">Committee</h2>
             </div>
             <div id="committee-con">
-                <div id="committee">                    
-                    <ul>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>President –Josh Ackworth</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>VP–Joe Masse</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Referee In Chief- Bobby Wright</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Secretary-Mark Lemieux</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Treasurer-Rob Neable</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Membership Rep1- Paul Raes</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Membership Rep2-Melanie Alexander</li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Assignor 1-Marc Giroux </li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Assignor 2-Jamie Dewar </li>
-                       <li><img class="user" src="public/images/icon_user.svg" alt="user"><br>Scheduler-Paul Schofield</li>
-                    </ul>
+                <div id="committee"> 
+                    <div>              
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>President –Josh Ackworth</p>
+                    </div>     
+                    <div>  
+                        <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>VP–Joe Masse</p>
+                    </div> 
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Referee In Chief- Bobby Wright</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Secretary-Mark Lemieux</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Treasurer-Rob Neable</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Membership Rep1- Paul Raes</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Membership Rep2-Melanie Alexander</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Assignor 1-Marc Giroux</p> 
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user">
+                            <p>Assignor 2-Jamie Dewar</p>
+                    </div>
+                    <div>
+                       <img class="user" src="public/images/icon_user.svg" alt="user"> 
+                            <p>Scheduler-Paul Schofield</p>
+                    </div>
                 </div>
              </div>
         </section>
         <?php include 'templates/footer.php'; ?>
-  </div>
-</main>
+    </div>
+    </main>
         <template>
             <div class="calendar-con">
                 <div class="day-box">
