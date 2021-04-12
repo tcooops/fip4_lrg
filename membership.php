@@ -159,8 +159,8 @@
              </div>
         </section>
         <?php include 'templates/footer.php'; ?>
-  </div>
-</main>
+    </div>
+    </main>
         <template>
             <div class="calendar-con">
                 <div class="day-box">
