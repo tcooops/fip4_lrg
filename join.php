@@ -20,7 +20,7 @@
     </section>
     <section class="certification">
       <h2>Interested in becoming a referee with LRG?</h2>
-      <h4>We'd love to have you! </h4>
+      <h4 class="fadeIn">We'd love to have you! </h4>
           <p>
           LRG members commit to representing the vision and mission of the London Referees Group. They encourage a high standard of ethics, closer cooperation, and understanding of the role of the referee among officials, coaches, players, parents, the community and the media. Membership requires a one-time application and statement of interest. Membership is open to all genders, ages 14 and up
           </p>

@@ -29,24 +29,24 @@
                     </p>
                 </div>
                 <div class="the-referee">
-                    <h3>The Training</h3>
+                    <h3 class="skewRight">The Training</h3>
                     <hr>
                     <p>The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of</p>
                 </div>
                 <div class="the-referee">
-                    <h3>The Commitment</h3>
+                    <h3 class="skewRight">The Commitment</h3>
                     <hr>
                     <p>LRG members commit to representing the vision and mission of the London Referees Group. They encourage a high standard of ethics, closer cooperation, and understanding of the role of the referee among officials, coaches, players, parents, the community and the media. Membership requires a one-time application and statement of interest. Membership is open to all genders, ages 14 and up.</p>                   
                 </div>
                 <div class="the-referee">
-                    <h3>Mentorship</h3>
+                    <h3 class="skewRight">Mentorship</h3>
                     <hr>
                     <p>As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence</p>
                 </div>
             </div>
           </section>
           <section class="great-ref">
-              <h2>What makes a great ref?</h2>
+              <h2 class="skewRight">What makes a great ref?</h2>
               <img class="join-ad" src="public/images/referee_infographic.jpg" alt="Great Refs">
           </section>
           <?php include 'templates/footer.php'; ?>
