@@ -24,23 +24,23 @@
             <div id="the-referee-con">
                 <div class="the-referee">
                     <h3 class="skewRight">The Role of the Referee</h3>
-                    <hr>
+                    <hr class="hr-animation">
                     <p>Officials play a vital role in the game, they are often described as the third team on the ice. The basic role of the on-ice officials can be broken down into two simple words – safe and fair. For a referee to view and officiate the game with these two words in mind, they should be able to call a game that is acceptable to all of the participants.
                     </p>
                 </div>
                 <div class="the-referee">
                     <h3 class="skewRight">The Training</h3>
-                    <hr>
+                    <hr class="hr-animation">
                     <p>The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of</p>
                 </div>
                 <div class="the-referee">
                     <h3 class="skewRight">The Commitment</h3>
-                    <hr>
+                    <hr class="hr-animation">
                     <p>LRG members commit to representing the vision and mission of the London Referees Group. They encourage a high standard of ethics, closer cooperation, and understanding of the role of the referee among officials, coaches, players, parents, the community and the media. Membership requires a one-time application and statement of interest. Membership is open to all genders, ages 14 and up.</p>                   
                 </div>
                 <div class="the-referee">
                     <h3 class="skewRight">Mentorship</h3>
-                    <hr>
+                    <hr class="hr-animation">
                     <p>As part of this program we assign experienced officials as mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence</p>
                 </div>
             </div>

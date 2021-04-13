@@ -22,37 +22,37 @@
             <div id="partners-con">
                 <h2 class="hidden">Our Partners</h2>
                 <ul>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://www.hockeycanada.ca/en-ca/home" target="new"><img src="public/images/partners_hockeyCan.png" alt="Hockey Canada"></a>
                         <hr>
                         <h3>Hockey Canada</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://www.ohf.on.ca " target="new"><img src="public/images/partners_OHF.png" alt="OHF"></a>
                         <hr>
                         <h3>OHF</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://alliancehockey.com" target="new"><img src="public/images/partners_alliance.png" alt="Alliance"></a>
                         <hr>
                         <h3>Alliance</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://www.omha.net" target="new"><img src="public/images/partners_omha.png" alt="OMHA"></a>
                         <hr>
                         <h3>OMHA</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://www.owha.on.ca" target="new"><img src="public/images/partners_owha.png" alt="OWHA"></a>
                         <hr>
                         <h3>OWHA</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="http://www.ohahockey.ca" target="new"><img src="public/images/partners_OHA.png" alt="OHA"></a>
                         <hr>
                         <h3>OHA</h3>
                     </li>
-                    <li class="partner">
+                    <li class="partner fadeIn">
                         <a href="https://sportabilitybc.ca" target="new">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="505.065" height="98.175" viewBox="0 0 505.065 98.175">
                         <defs>
