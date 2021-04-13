@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section>
-        <section id="announcements">
+        <section id="announcements" class="fadeIn">
             <h2>Announcements</h2>
             <div id="announcement-con">
                 <div id="today-ann">Today's announcements</div>
