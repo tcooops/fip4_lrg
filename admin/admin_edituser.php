@@ -15,6 +15,7 @@ if(isset($_POST['submit'])){
         'username'=>trim($_POST['username']),
         'password'=>trim($_POST['password']),
         'email'=>trim($_POST['email']),
+        'user_level'=>trim($_POST['user_level']),
         'id'=>$id
     );
 
@@ -103,6 +104,12 @@ if(isset($_POST['submit'])){
                     <label for="email">Email</label>
                     <input id="email" type="email" name="email" value="<?php echo $user_info['user_email'];?>"><br><br>
 
+                    <label for="user_level">User Level</label>
+                        <select id="user_level" name="user_level">
+                            <option value="0">Member</option>
+                            <option value="1">Admin</option>
+                        </select>
+                    <br><br>
                     <button class="admin_button" type="submit" name="submit">Update User</button>
                     <p>Back to <a class="link" href="index.php">dashboard</a></p>
                 <?php endwhile;?>

@@ -1,6 +1,21 @@
-<?php
-    require_once '../load.php';
-    confirm_logged_in();
+<?php 
+require_once '../config/database.php';
+require_once 'scripts/read.php';
+require_once 'scripts/functions.php';
+require_once 'scripts/matches.php';
+
+if(isset($_POST['submit'])){
+    $names = trim($_POST['names']);
+    $matchlocation = trim($_POST['location']);
+    $refs = trim($_POST['referees']);
+    $matchdate = trim($_POST['date']);
+
+    if(empty($names) || empty($matchlocation) || empty($refs) || empty($matchdate)){
+        $message = 'Please fill the required fields';
+    }else{
+        $message = addMatch($names, $matchlocation, $refs, $matchdate);
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LRG ~ User Dashboard</title>
+    <title>LRG ~ Register</title>
     <link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
@@ -61,81 +76,42 @@
                   </div>
             </nav>
         </div>
-        </header>
+        </header>  
+        <section class="admin">
+            <div id="register-con">
+                <h2>Create A New Schedule</h2>
+                <div class="redirect-msg">
+                    <div class="redirect-msg"> <?php echo !empty($message)? $message: ''; ?> </div>
+                </div>
+                <form action="admin_addschedule.php" method="post" class="register-form">
+                    <label>Name</label>
+                    <input type="text" name="names" value="" placeholder="Senators at ...">
+                    <label>Location</label>
+                    <input type="text" name="location" value="" placeholder="Centre">
+                    <label>Referees</label>
+                    <input type="text" name="referees" value="" placeholder="John Smith">
+                    <label>Date</label>
+                    <input type="text" name="date" value="">
 
-        <section class="dashboard-con">
-                <h2>Welcome, <?php echo $_SESSION['user_name'];?>!</h2>
-                <h3>User Dashboard</h3>
-            <div class="dashboard">
-                <div class="icon-div">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <title>background</title>
-                    <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-                    </g>
-                    <g>
-                    <title>Layer 1</title>
-                    <path id="svg_1" fill="none" d="m0,0l24,0l0,24l-24,0l0,-24z"/>
-                    <path fill="#ed2927" id="svg_2" d="m3,17.25l0,3.75l3.75,0l11.06,-11.06l-3.75,-3.75l-11.06,11.06zm17.71,-10.21c0.39,-0.39 0.39,-1.02 0,-1.41l-2.34,-2.34c-0.39,-0.39 -1.02,-0.39 -1.41,0l-1.83,1.83l3.75,3.75l1.83,-1.83z"/>
-                    </g>
-                    </svg>
-                    <a class="link" href="admin_edituser.php">Edit profile</a>
-                </div>
-                <div class="icon-div">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <title>background</title>
-                    <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-                    </g>
-                    <g>
-                    <title>Layer 1</title>
-                    <path id="svg_1" fill="none" d="m0,0l24,0l0,24l-24,0l0,-24z"/>
-                    <path fill="#ed2927" id="svg_2" d="m20,3l-1,0l0,-2l-2,0l0,2l-10,0l0,-2l-2,0l0,2l-1,0c-1.1,0 -2,0.9 -2,2l0,16c0,1.1 0.9,2 2,2l16,0c1.1,0 2,-0.9 2,-2l0,-16c0,-1.1 -0.9,-2 -2,-2zm0,18l-16,0l0,-13l16,0l0,13z"/>
-                    </g>
-                    </svg>
-                    <a class="link" href="admin_editschedule.php">Edit schedule</a>
-                </div>
-                <div class="icon-div">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <title>background</title>
-                    <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-                    </g>
-                    <g>
-                    <title>Layer 1</title>
-                    <path id="svg_1" fill="none" d="m0,0l24,0l0,24l-24,0l0,-24z"/>
-                    <path fill="#ed2927" id="svg_2" d="m10,19.958848l0,-6l4,0l0,6l5,0l0,-8l3,0l-10,-9l-10,9l3,0l0,8l5,0z"/>
-                    </g>
-                    </svg>
-                    <a class="link" href="../index.php">Home</a>
-                </div>
-                <div class="icon-div">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <title>background</title>
-                    <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-                    </g>
-                    <g>
-                    <title>Layer 1</title>
-                    <path id="svg_1" fill="none" d="m0,0l24,0l0,24l-24,0l0,-24z"/>
-                    <path fill="#ed2927" id="svg_2" d="m17,7l-1.41,1.41l2.58,2.59l-10.17,0l0,2l10.17,0l-2.58,2.58l1.41,1.42l5,-5l-5,-5zm-13,-2l8,0l0,-2l-8,0c-1.1,0 -2,0.9 -2,2l0,14c0,1.1 0.9,2 2,2l8,0l0,-2l-8,0l0,-14z"/>
-                    </g>
-                    </svg>
-                    <a class="link" href="admin_logout.php">Log out</a>
-                </div>                
+                    <div id="login-submit">
+                        <button class="admin_button" name="submit">Add Schedule</button>
+                    </div>
+                    <p>Back to <a class="link" href="index.php">dashboard</a></p>
+                </form>
+
             </div>
         </section>
-
+        
         <footer>
               <h2 class="hidden">Footer</h2>
               <div id="footer">
                 <img src="../public/images/footer_logo.svg" alt="footer logo" id="footer-logo"> 
                 <ul id="footer-nav">
-                    <li><a href="#the-referee">The Referee</a></li>
-                    <li><a href="partners.php">Partners</a></li>
-                    <li><a href="membership.php">Membership</a></li>
-                    <li><a href="join.php">Join Us</a></li> 
-                    <li><a href="contact.php">Contact Us</a></li>       
+                    <li><a href="../referee.php">The Referee</a></li>
+                    <li><a href="../partners.php">Partners</a></li>
+                    <li><a href="../membership.php">Membership</a></li>
+                    <li><a href="../join.php">Join Us</a></li> 
+                    <li><a href="../contact.php">Contact Us</a></li>       
                 </ul>
                 <ul id="footer-info">
                     <li><a href="">Bylaws</a></li>

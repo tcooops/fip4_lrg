@@ -4,7 +4,7 @@
 
     $result = array();
 
-    function getAllUsers($conn) {
+    function getAllMatches($conn) {
         $query = "SELECT * FROM tbl_matches";
 
         $runQuery = $conn->query($query);
@@ -18,7 +18,7 @@
     }
 
     ///////
-    function getSingleUser($conn, $id) {
+    function getSingleMatch($conn, $id) {
         $query = "SELECT * FROM tbl_matches WHERE id=" . $id . "";
 
         $runQuery = $conn->query($query);
