@@ -6,7 +6,6 @@
     <title>LRG - Membership</title>
     <?php include 'templates/links.php'; ?>
     <?php include 'templates/lightbox.php'; ?>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
 <main id="app">
@@ -33,7 +32,7 @@
             <h2>Upcoming Games Schedule</h2>
            
             <!--fetching Schedule from database-->
-            <match-card v-for="match in allMatches" :match="match" key="match.id"></match-card>
+            <match-card v-for="match in allMatches" :match="match" :key="match.id"></match-card>
         </section>
         <section>
             <div class="inner-hero" id="inner-hero-committee">
@@ -113,23 +112,8 @@
                 </div>
             </div>
         </template>
-
-<script>
-      Vue.component("modal", {
-        template: "#modal-template"
-      });
-
-      new Vue({
-        el: "#app",
-        data: {
-          showModalSkills1: false,
-          showModalSkills2: false,
-          showModalSkills3: false,
-          showModalSkills4: false
-        }
-      });
-</script>
 <script src="public/js/burger.js"></script>
-<script type="module" src="public/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script defer type="module" src="public/js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-//import {fetchData} from "./modules/TheDataMiner.js";
+import {fetchData} from "./modules/TheDataMiner.js";
 import Schedule from "./modules/ScheduleComp.js";
 
 (() => {
@@ -10,7 +10,7 @@ import Schedule from "./modules/ScheduleComp.js";
     
         mounted: function() {
             console.log("Vue is mounted!");
-            fetchData("../includes/index.php")
+            fetchData("./includes/index.php")
                 .then(data => {
                     data.forEach(match => this.allMatches.push(match));
                 })
