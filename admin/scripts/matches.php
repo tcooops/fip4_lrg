@@ -1,8 +1,8 @@
 <?php
 // to get all matches
 function allMatches($con) {
-    $con = Database::getInstance()->getConnection();
-    $stmt = $con->prepare("select id, names, matchlocation,refs, matchdate from tbl_matches");
+    $conn = Database::getInstance()->getConnection();
+    $stmt = $conn->prepare("select id, names, matchlocation,refs, matchdate from tbl_matches");
     $stmt->execute();
     return $stmt->fetchAll();
 }
@@ -30,5 +30,25 @@ function addMatch($names, $matchlocation, $refs, $matchdate){
     }else{
         return 'A new schedule was not created.';
         
+    }
+}
+
+//edit schedule
+function deleteMatch(){
+    $pdo = Database::getInstance()->getConnection();
+
+    $delete_match = 'DELETE FROM tbl_matches WHERE id=:matchid';
+    $update_matches = $pdo->prepare($delete_match);
+    $update_match_result = $update_matches->execute(
+       // array(
+         //   ':matchid'=>$matchtable['id']
+        //)
+    );
+
+    if($update_match_result){
+        redirect_to('admin_editschedule.php');
+        //return 'succeed';
+    }else{
+        return 'Delete information failed.';
     }
 }

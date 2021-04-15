@@ -67,33 +67,35 @@ confirm_logged_in();
             <h2>Welcome, <?php echo $_SESSION['user_name'];?>!</h2>
             <h4>Edit the schedule information</h4>
             
-            <table>
+            <table class="schedule-table">
                 <thead>
                     <tr>
                         <th>Names</th>
                         <th>Location</th>
                         <th>Referees</th>
                         <th>Date</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    $matches = allMatches();
+                <?php
+                    $matches = allMatches($con);
                     foreach($matches as $match){
                         echo "<tr>";
                             echo "<td>". $match['names'] ."</td>";
                             echo "<td>". $match['matchlocation'] ."</td>";
                             echo "<td>". $match['refs'] ."</td>";
                             echo "<td>". $match['matchdate'] ."</td>";
-                            echo "<td><a href='admin_editmatch.php'></a></td>";
+                            echo "<td><a href='admin_deletematch.php'>Delete</a></td>";
                         echo "</tr>";
                     }   
                     ?>
                 </tbody>
             </table>
-
+            <br>
             <a class="link" id="admin_button"  href="admin_addschedule.php">Add A New Schedule</a>
-            <p>Back to <a class="link" href="index.php">dashboard</a></p>
+
+            <p><a class="link" href="index.php">Back To Dashboard</a></p>
         </div>
     </section>
         <footer>
