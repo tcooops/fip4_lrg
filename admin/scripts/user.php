@@ -1,8 +1,8 @@
 <?php 
-function createUser($fname, $username, $password, $email){
+function createUser($fname, $username, $password, $email, $level){
     $pdo = Database::getInstance()->getConnection();
-    $create_user_query = 'INSERT INTO tbl_user(user_fname, user_name, user_pass, user_email, user_ip)';
-    $create_user_query .= ' VALUES(:fname, :username, :password, :email, "no" )';
+    $create_user_query = 'INSERT INTO tbl_user(user_fname, user_name, user_pass, user_email, user_ip, user_level)';
+    $create_user_query .= ' VALUES(:fname, :username, :password, :email, "no", :level )';
 
     $create_user_set = $pdo->prepare($create_user_query);
     $create_user_result = $create_user_set->execute(
@@ -11,6 +11,7 @@ function createUser($fname, $username, $password, $email){
             ':username'=>$username,
             ':password'=>$password,
             ':email'=>$email,
+            ':level'=>$level
         )
     );
  
@@ -42,10 +43,11 @@ function getSingleUser($user_id){
     }
 }
 
+//EDIT USER
 function editUser($user_data){
     $pdo = Database::getInstance()->getConnection();
 
-    $update_user_query = 'UPDATE tbl_user SET user_fname = :fname, user_name=:username, user_pass=:password, user_email=:email WHERE user_id=:id';
+    $update_user_query = 'UPDATE tbl_user SET user_fname = :fname, user_name=:username, user_pass=:password, user_email=:email, user_level=:user_level, WHERE user_id=:id';
     $update_user_set = $pdo->prepare($update_user_query);
     $update_user_result = $update_user_set->execute(
         array(
@@ -53,7 +55,8 @@ function editUser($user_data){
             ':username'=>$user_data['username'],
             ':password'=>$user_data['password'],
             ':email'=>$user_data['email'],
-            ':id'=>$user_data['id']
+            ':id'=>$user_data['id'],
+            ':user_level'=>$user_level['user_level']
         )
     );
 
@@ -83,3 +86,13 @@ function isUsernameExists($username){
 
     return !$user_exists_result || $user_exists_set->fetchColumn()>0;
 }
+
+//NAME OF USER LEVEL
+function get_user_level($user_id){
+    $levels = array(
+        0 => 'Member',
+        1 => 'Admin'
+    );
+    return $levels[$id];
+}
+

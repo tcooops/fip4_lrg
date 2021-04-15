@@ -9,11 +9,12 @@ if(isset($_POST['submit'])){
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
     $email = trim($_POST['email']);
+    $level = trim($_POST['user_level']);
 
     if(empty($email) || empty($password) || empty($username) || empty($fname)){
         $message = 'Please fill the required fields';
     }else{
-        $message = createUser($fname, $username, $password, $email);
+        $message = createUser($fname, $username, $password, $email, $level);
     }
 }
 ?>
@@ -92,6 +93,12 @@ if(isset($_POST['submit'])){
                     <input type="email" name="email" value="" placeholder="bobbyorr@gmail.com">
                     <label>Password</label>
                     <input type="password" name="password" value="" placeholder="Make it secure!">
+                    <label for="user_level">User Level</label>
+                        <select id="user_level" name="user_level">
+                            <option value="0">Member</option>
+                            <option value="1">Admin</option>
+                        </select>
+                    <br><br>
                     <div id="login-submit">
                         <button class="admin_button" name="submit">Create Account</button>
                         <p id="admin_button">Already have an account? <a class="link" href="admin_login.php">Sign in!</a></p>

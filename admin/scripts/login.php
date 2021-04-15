@@ -29,13 +29,15 @@ function login($username, $password, $ip){
             $message = 'You just logged in!';
             $_SESSION['user_id'] = $id;
             $_SESSION['user_name'] = $found_user['user_name'];
+            $_SESSION['user_level'] = $found_user['user_level'];
            
             $update_query = 'UPDATE tbl_user SET user_ip = :ip WHERE user_id = :id';
             $update_set = $pdo->prepare($update_query);
             $update_set->execute(
                 array(
                     ':ip'=>$ip,
-                    ':id'=>$id
+                    ':id'=>$id,
+                    ':level'=>$level
                 )
             );
         }
@@ -43,6 +45,15 @@ function login($username, $password, $ip){
         if(isset($id)){
             redirect_to('index.php');
         }
+
+        //if(isset($id) == 0){
+        //    redirect_to('member_index.php');
+        //}elseif(isset($id) == 1){
+        //    redirect_to('index.php');
+        //}else{
+            //
+        //}
+
     }else{
         $message = 'User does not exist';
     }

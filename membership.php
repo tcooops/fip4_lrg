@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="https://unpkg.com/vue"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LRG - Membership</title>
@@ -31,83 +30,9 @@
         </section>
         <section id="schedule-section">
             <h2>Upcoming Games Schedule</h2>
-            <div class="calendar-con">
-                <div class="day-box">
-                    <span class="date">March 31st 2021</span>
-                </div>
-                <div class="cal-details">
-                    <div>
-                        <h3 for="teams">Match:</h3>    
-                        <p name="teams">Senators at Leafs</p>
-                    </div>
-                    <div>
-                        <h3 for="location">Location:</h3>
-                        <p name="location">Soctiabank Arena</p>
-                    </div>
-                    <div >
-                        <h3 for="refs">Refs Assigned:</h3>
-                        <ul name="refs" class="refs">
-                            <li>Thomas Chabot</li>
-                            <li>Erik Gudbranson</li>
-                            <li>Brady Tkackuk</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="calendar-con">
-                <div class="day-box">
-                    <span class="date">April 2nd 2021</span>
-                </div>
-                <div class="cal-details">
-                    <div>
-                        <h3 for="teams">Match:</h3>    
-                        <p name="teams">Senators at Canadiens</p>
-                    </div>
-                    <div>
-                        <h3 for="location">Location:</h3>
-                        <p name="location">Centre Bell</p>
-                    </div>
-                    <div >
-                        <h3 for="refs">Refs Assigned:</h3>
-                        <ul name="refs" class="refs">
-                            <li>Thomas Chabot</li>
-                            <li>Erik Gudbranson</li>
-                            <li>Brady Tkackuk</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="calendar-con">
-                <div class="day-box">
-                    <span class="date">April 4th 2021</span>
-                </div>
-                <div class="cal-details">
-                    <div>
-                        <h3 for="teams">Match:</h3>    
-                        <p name="teams">Senators at Canucks</p>
-                    </div>
-                    <div>
-                        <h3 for="location">Location:</h3>
-                        <p name="location">Rogers Arena</p>
-                    </div>
-                    <div >
-                        <h3 for="refs">Refs Assigned:</h3>
-                        <ul name="refs" class="refs">
-                            <li>Thomas Chabot</li>
-                            <li>Erik Gudbranson</li>
-                            <li>Brady Tkackuk</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-
-
+           
+            <!--fetching Schedule from database-->
+            <match-card v-for="match in allMatches" :match="match" :key="match.id"></match-card>
         </section>
         <section>
             <div class="inner-hero" id="inner-hero-committee">
@@ -187,22 +112,8 @@
                 </div>
             </div>
         </template>
-
-<script>
-      Vue.component("modal", {
-        template: "#modal-template"
-      });
-
-      new Vue({
-        el: "#app",
-        data: {
-          showModalSkills1: false,
-          showModalSkills2: false,
-          showModalSkills3: false,
-          showModalSkills4: false
-        }
-      });
-    </script>
-<?php include 'templates/bottomLinks.php'; ?>
+<script src="public/js/burger.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script defer type="module" src="public/js/main.js"></script>
 </body>
 </html>
